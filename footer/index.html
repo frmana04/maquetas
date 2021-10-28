@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../global/styles.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main"></div>
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer__first-row">
+
+                <div class="footer__rrss">
+                    <div class="footer__rrss-text1"><div class="footer__slash-container"><span class="footer__slash">/</span></div><span
+                            class="footer__slash-text"></span>RR.SS.</div>
+                    <div class="footer__rrss-text2"><span>Toyota Gazoo Racing Iberian Cup</span></div>
+                    <div class="footer__rrss-iconos">
+                        <div class="footer__ico-container" onclick="clickRRSS('FB')">
+                            <img class="footer__ico-image" src="assets/images/ico-Facebook.png">
+                            <span class="footer__ico-text">Facebook</span>
+                        </div>
+                        <div class="footer__ico-container" onclick="clickRRSS('TT')">
+                            <img class="footer__ico-image" src="assets/images/ico-Twitter.png">
+                            <span class="footer__ico-text">Twitter</span>
+                        </div>
+                        <div class="footer__ico-container" onclick="clickRRSS('IG')">
+                            <img class="footer__ico-image" src="assets/images/ico-Instagram.png">
+                            <span class="footer__ico-text">Instagram</span>
+                        </div>
+                        <div class="footer__ico-container" onclick="clickRRSS('YT')">
+                            <img class="footer__ico-image" src="assets/images/Ico-Youtube.png">
+                            <span class="footer__ico-text">Youtube</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer__second-row">
+
+            <div class="footer__links">
+                    <a class="footer__link"><span >Contacto |</span></a>
+                    <a class="footer__link"><span >Política de Privacidad |</span></a>
+                    <a class="footer__link"><span >Política de Cookies |</span></a>
+                    <a class="footer__link"><span >Términos de uso</span></a>
+            </span>
+            </div>
+                <div class="footer__copyright">
+                    <span class="footer__copyright-first">Copyright Toyota Motor Corporation</span>
+                    <span class="footer__copyright-second">Todos los derechos reservados</span>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<style>
+    .main {
+        height: 1500px;
+    }
+
+    .footer {
+      
+        
+    }
+
+    .footer__first-row {
+     
+        padding-left: 400px;
+        padding-top: 45px;
+        border-top: solid #F2F2F2 6px;
+        padding-bottom: 100px;
+    }
+
+    .footer__rrss {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .footer__rrss-text1 {
+        font-size: 2.125rem;
+
+        margin-bottom: 35px;
+        display: flex;
+    }
+
+    .footer__slash-container{
+        width: fit-content;
+        transform: rotate(-6deg);
+    }
+    .footer__slash {
+        color: #E60010;
+        font-size: 1.8rem;
+        display: flex;
+    }
+  
+
+    .footer__rrss-text2 {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+
+    .footer__rrss-iconos {
+        display: flex;
+    }
+
+    .footer__ico-container{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__ico-image {
+        width: 35px;
+        height: auto;
+    }
+    .footer__ico-text{
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        margin-top:13px ;
+    }
+    .footer__second-row{
+        padding-top: 50px;
+        padding-bottom: 74px;
+
+        background-color: #000;
+    }
+    .footer__links{
+        display: flex;
+        
+    }
+    .footer__link{
+        color:#808080;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    .footer__copyright{
+        color:#808080;
+        display: flex;
+        flex-direction: column;
+       
+    }
+</style>
