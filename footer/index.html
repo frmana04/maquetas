@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../global/styles.css">
-
+<script src="script.js"></script>
 
     <title>Document</title>
 </head>
@@ -50,17 +50,17 @@
             <div class="footer__second-row">
 
             <div class="footer__links">
-                    <a class="footer__link"><span >Contacto |</span></a>
-                    <a class="footer__link"><span >Política de Privacidad |</span></a>
-                    <a class="footer__link"><span >Política de Cookies |</span></a>
-                    <a class="footer__link"><span >Términos de uso</span></a>
+                    <a href="#" class="footer__link"><span >Contacto <span class="footer__separator"> |</span></span></a>
+                    <a href="#" class="footer__link"><span >Política de Privacidad <span class="footer__separator"> |</span></span></a>
+                    <a href="#" class="footer__link"><span >Política de Cookies <span class="footer__separator"> |</span></span></a>
+                    <a href="#" class="footer__link"><span >Términos de uso</span></a>
             </span>
             </div>
                 <div class="footer__copyright">
                     <span class="footer__copyright-first">Copyright Toyota Motor Corporation</span>
                     <span class="footer__copyright-second">Todos los derechos reservados</span>
                 </div>
-            </div>
+            </div> 
 
 
         </div>
@@ -82,7 +82,7 @@
 
     .footer__first-row {
      
-        padding-left: 400px;
+        padding-left: 20%;
         padding-top: 45px;
         border-top: solid #F2F2F2 6px;
         padding-bottom: 100px;
@@ -127,6 +127,10 @@
         margin-right: 20px;
         justify-content: center;
         align-items: center;
+        
+    }
+    .footer__ico-container:hover{
+        cursor: pointer;
     }
     .footer__ico-image {
         width: 35px;
@@ -140,8 +144,10 @@
     .footer__second-row{
         padding-top: 50px;
         padding-bottom: 74px;
-
+        display: flex;
+        justify-content: space-evenly;
         background-color: #000;
+        font-size: 0.875rem;
     }
     .footer__links{
         display: flex;
@@ -158,4 +164,69 @@
         flex-direction: column;
        
     }
+    .footer__copyright-first{
+        text-transform: uppercase;
+    }
+
+    .footer__copyright-second{
+        margin-top:10px;
+    }
+    @media(max-width:1200px){
+        .footer__second-row{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+    .footer__links{
+        margin-bottom: 50px;
+
+    }
+    }
+    @media(max-width:650px){
+        .footer__first-row {
+     
+     padding-left: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     padding-top: 45px;
+     border-top: solid #F2F2F2 3px;
+     padding-bottom: 100px;
+ }
+
+ .footer__rrss{
+     width: 100%;
+ }
+
+ .footer__rrss-iconos{
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .footer__ico-container{
+margin-right: 0;
+ }
+ .footer__rrss-text1,.footer__rrss-text2{
+     padding-left: 8%;
+ }
+    
+    .footer__separator{
+        display: none;
+    }
+   .footer__links{
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+    .footer__second-row{
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .footer__link{
+        margin-top: 50px;
+    }
+    .footer__copyright{
+        margin-top: 108px;
+    }
+
+}
 </style>
