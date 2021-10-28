@@ -96,23 +96,38 @@ function createMenu() {
 
     menuObject.options.forEach((option, index) => {
         htmlText += `
-        <div class="header__option header__language" id="${option.id}" onclick="${device=='DK'?'setAllInactive()':''};setActive('opt${index+1}')" data-active="false">
+       
+        <div class="header__option" id="${option.id}" onclick="${device=='DK'?'setAllInactive()':''};setActive('opt${index+1}')" data-active="false">
         ${device=='MB'?'<div class="header__arrow-container-left"><img class="header__arrow-img" src="assets/images/arrow_left.png"></div>':""}
         ${option.ico?`<img class="header__language-img" src="assets/images/${option.nameIco}">`:""}
       
         <span class="header__text">${option.name}</span>${device=='MB'?'<div class="header__arrow-container-right"><img class="header__arrow-img" src="assets/images/arrow_right.png"></div>':""}
         <div class="header__submenu submenu--inactive">
         ${option.subOptions.map(subOption=>{
-            return(`<a href="${subOption.url}"><div class="header__submenu-opt"><span class="header__submenu-text">${subOption.name}</span><div class="header__arrow-container-right"><img class="header__arrow-img" src="assets/images/arrow_right.png"></div></div></a>`)
+            return(`<a class="header__link" onclick="${option.id=="opt4"?'setLanguage('+"\'"+subOption.name+"\'"+')':''}" href="${subOption.url}"><div class="header__submenu-opt"><span class="header__submenu-text">${subOption.name}</span><div class="header__arrow-container-right"><img class="header__arrow-img" src="assets/images/arrow_right.png"></div></div></a>`)
         }).join("")}    
         </div>
+    
     </div>
     `
-        document.querySelector('.header__options').innerHTML = htmlText;
+       if (device=="DK"){
+        document.querySelector('.header__options--DK').innerHTML = htmlText;
+        document.querySelector('.header__options--MB').style.display="none";
+
+       }
+       else{
+        document.querySelector('.header__options--MB').innerHTML = htmlText;
+        document.querySelector('.header__options--DK').style.display="none";
+       }
+     
     });
 }
 
+function setLanguage(language){
 
+    document.querySelector('#opt4').querySelector('.header__text').innerHTML=language;
+
+}
 
 function attachEvents() {
     if (device == "DK") {
@@ -126,6 +141,14 @@ function attachEvents() {
             if (optActive != "opt4")
                 document.querySelector('.header__language-img').src = "./assets/images/language.png";
         });
+
+        document.querySelector('#opt4').addEventListener('mouseleave', () => {
+
+            if (optActive != "opt4")
+                document.querySelector('.header__language-img').src = "./assets/images/language.png";
+        });
+
+      
 
         menuObject.options.forEach(option => {
             document.querySelector(`#${option.id}`).addEventListener('mouseleave', () => {
@@ -154,6 +177,14 @@ function attachEvents() {
 
         });
     }
+    else {
+    document.querySelectorAll('.header__link').forEach(el=>{
+        console.log(el)
+        el.addEventListener('click',(ev)=>{
+        ev.stopPropagation();
+    })}
+    )
+}
 }
 
 function setAllInactive() {
@@ -194,8 +225,6 @@ function setInactive(id) {
 
 function setActive(id) {
 
-   
-       
         if(device=="DK"){
             document.querySelector(`#${id}`).dataset.active = true;
             document.querySelector(`#${id}`).querySelector('.header__submenu').style.display = "block";
@@ -234,13 +263,14 @@ function setActive(id) {
 
 function toggleMenuMB() {
     if (stateMenuMB == 'closed') {
-        document.querySelector('.header__options').style.display = "flex";
         document.querySelector('.header__burger').src = "./assets/images/close.png"
+        document.querySelector('.header__options').style.top="52px";
         stateMenuMB = 'opened';
     } else if (stateMenuMB == 'opened') {
-        document.querySelector('.header__options').style.display = "none";
         document.querySelector('.header__burger').src = "./assets/images/ico-menu-mobile.png"
         stateMenuMB = 'closed';
+        document.querySelector('.header__options').style.top="-192px";
+
         setAllInactive();
         menuObject.options.forEach(option=>{
             
