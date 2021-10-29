@@ -15,7 +15,9 @@
 
     <section class="header">
         <div class="header__container">
-            <img class="header__img" src="assets/images/1600-Cabecera-Home@2x.png">
+            <img class="header__img header__img--DK" src="assets/images/1600-Cabecera-Home@2x.png">
+            <img class="header__img header__img--MB" src="assets/images/1600-Cabecera-Home@2x-MB.png">
+
             <div class="header__text"><span class="header__phrase">Lorem ipsum dolor sit amet</span></div>
         </div>
     </section>
@@ -32,21 +34,50 @@
     }
     .header__text{
         position: absolute;
-        bottom:100px;
+        bottom:14.5%;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .header__phrase{
-        font-size: 3.375rem;
+        font-size: max(2.8125vw,30px);
+        line-height: max(3.5vw,38px);
         color:#fff;
-        width: 614px;
+        width: max(32vw,340px);
         text-transform: uppercase;
         text-align: center;
+        font-family: DecimaMonoPro-Bold;
     }
     .header__img{
         width: 100%;
         height: auto;
+    }
+    .header__img--DK{
+            display: block;
+        }
+       
+        .header__img--MB{
+            display: none;
+        }
+
+
+    @media(max-width:500px){ 
+      .header__text{
+          bottom:20px;
+      }
+        .header__img--DK{
+            display: none;
+        }
+       
+        .header__img--MB{
+            display: block;
+        }
+        .header__phrase{
+        font-size: 8.33vw;
+        width: 94.44vw;
+        line-height: 9.5vw;
+      
+    }
     }
 
 
