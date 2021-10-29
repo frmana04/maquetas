@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../global/styles.css">
 
-  
+
     <title>Document</title>
 </head>
+
 <body>
 
     <section class="header">
@@ -18,70 +19,290 @@
             <img class="header__img header__img--DK" src="assets/images/1600-Cabecera-Home@2x.png">
             <img class="header__img header__img--MB" src="assets/images/1600-Cabecera-Home@2x-MB.png">
 
-            <div class="header__text"><span class="header__phrase">Lorem ipsum dolor sit amet</span></div>
+            <div class="header__text">
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+        </div>
+    </section>
+    <section class="prox-carrera">
+        <h3>Nam facilisis ornare</h3>
+        <p class="prox-carrera__text">Consectetur adipiscing elit. Etiam at dolor metus. Suspendisse pellentesque quam
+            vel odio fermentum, eget ullamcorper velit imperdiet.</p>
+
+        <h2>Lorem ipsum dolor sit amet</h2>
+
+        <div class="prox-carrera__cron-container">
+            <p class="prox-carrera__cron-titulo">Siguiente carrera en:</p>
+            <p class="prox-carrera__time" data-chronometer></p>
+         
+            <div class="prox-carrera__trazo">
+            <img class="prox-carrera__trazo-img" src="assets/images/Trazo@2x.png">
+           <div class="prox-carrera__trazo-text"> <span ><span >Santiago de Compostela</span> &nbsp;-&nbsp; <span>Oviedo</span>    </span></div>
+        </div>
         </div>
     </section>
 
+
+
 </body>
 <script src="script.js"></script>
+
 </html>
 
 <style>
-
-    .header__container{
+    .header__container {
         width: 100%;
         position: relative;
     }
-    .header__text{
+
+    .header__text {
         position: absolute;
-        bottom:14.5%;
+        bottom: 14.5%;
         width: 100%;
         display: flex;
         justify-content: center;
     }
-    .header__phrase{
-        font-size: max(2.8125vw,30px);
-        line-height: max(3.5vw,38px);
-        color:#fff;
-        width: max(32vw,340px);
+
+    .header__phrase {
+        font-size: max(2.8125vw, 30px);
+        line-height: max(3.5vw, 38px);
+        color: #fff;
+        width: max(32vw, 340px);
         text-transform: uppercase;
         text-align: center;
         font-family: DecimaMonoPro-Bold;
     }
-    .header__img{
+
+    .header__img {
         width: 100%;
         height: auto;
     }
-    .header__img--DK{
-            display: block;
-        }
-       
-        .header__img--MB{
-            display: none;
-        }
 
-
-    @media(max-width:500px){ 
-      .header__text{
-          bottom:20px;
-      }
-        .header__img--DK{
-            display: none;
-        }
-       
-        .header__img--MB{
-            display: block;
-        }
-        .header__phrase{
-        font-size: 8.33vw;
-        width: 94.44vw;
-        line-height: 9.5vw;
-      
+    .header__img--DK {
+        display: block;
     }
+
+    .header__img--MB {
+        display: none;
     }
 
 
-    
+    .prox-carrera {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+    }
 
+    .prox-carrera__text {
+        font-size: 0.875rem;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .prox-carrera__cron-titulo {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .prox-carrera__cron-container {
+        width: 405px;
+        height: 235px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .separator {
+        color: #ff0022;
+        margin-left: 25px;
+        margin-right: 25px;
+        font-size: 1.2rem;
+        padding-bottom: 11px;
+    }
+
+    .prox-carrera__time {
+        display: flex;
+        align-items: center;
+    }
+    .prox-carrera__numbers{
+        font-size: 2.5rem;
+       
+        font-family: DecimaMonoPro-BoldItalic;
+    }
+    .prox-carrera__units {
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999999;
+        text-transform: uppercase;
+        font-family: DecimaMonoProLt;
+    }
+    .prox-carrera__unit-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prox-carrera__trazo{
+        position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+    }
+    .prox-carrera__trazo-img{
+        width: 330px;
+        height: auto;
+    }
+    .prox-carrera__trazo-text{
+    position: absolute;
+    top: 24px;
+    font-family: DecimaMonoPro-Bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    width: 90%;
+    text-align: center;
+    padding-left: 25px
+;
+    }
+
+    @media(max-width:1300px) {
+
+        .prox-carrera {
+            width: 90%;
+        }
+
+    }
+
+    @media(max-width:500px) {
+
+        .prox-carrera {
+            padding-top: 50px;
+        }
+
+        .header__text {
+            bottom: 20px;
+        }
+
+        .header__img--DK {
+            display: none;
+        }
+
+        .header__img--MB {
+            display: block;
+        }
+
+        .header__phrase {
+            font-size: 8.33vw;
+            width: 94.44vw;
+            line-height: 9.5vw;
+        }
+
+
+        .prox-carrera__text {
+            font-size: 1rem;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .prox-carrera__cron-container {
+        width: 90%;
+    }
+       .separator {
+       
+        margin-left: 2vw;
+        margin-right: 2vw;
+       
+    }
+    }
 </style>
 
+<script>
+    let date = calculateDate([2022, 9, 29, 19, 16, 40]);
+    
+    setTimeText(date);
+    date.seconds--;
+    if (date.seconds!=-1 || date.minutes!=0 || date.days!=0 || date.hours!=0)
+    startTime();
+
+    function chronometer() {
+
+        if (date.seconds!=0 || date.minutes!=0 || date.days!=0 || date.hours!=0){
+        
+        
+
+        if (date.seconds < 0) {
+            date.seconds = '59';
+            date.minutes--;
+        }
+        if (date.minutes < 0) {
+            date.minutes = '59';
+            date.hours--;
+        }
+        if (date.hours < 0) {
+            date.hours = '23';
+            date.days--;
+        }
+        
+
+        setTimeText(date);
+        date.seconds--;
+    }
+        else{
+             date.seconds=0;
+            
+             setTimeText(date);
+        }
+    }
+    function startTime() {
+        setInterval(chronometer, 1000)
+
+    }
+
+    function setTimeText(date){
+        chronometerDisplay = document.querySelector(`[data-chronometer]`);
+    chronometerDisplay.innerHTML =
+            `<div class="prox-carrera__unit-container">
+                <span class="prox-carrera__numbers">${date.days.toString().padStart(2,'0')}</span>
+                <span class="prox-carrera__units">Días</span>
+             </div>
+             <div class="separator">|</div>
+             <div class="prox-carrera__unit-container">
+                <span class="prox-carrera__numbers">${date.hours.toString().padStart(2,'0')}</span>
+                <span class="prox-carrera__units">Horas</span>
+            </div>
+            <div class="separator">|</div>
+            <div class="prox-carrera__unit-container">
+                <span class="prox-carrera__numbers">${date.minutes.toString().padStart(2,'0')}</span>
+                <span class="prox-carrera__units">Minutos</span>
+            </div>
+            <div class="separator">|</div>
+            <div class="prox-carrera__unit-container">
+                <span class="prox-carrera__numbers">${date.seconds.toString().padStart(2,'0')}</span>
+                <span class="prox-carrera__units">Segundos</span>
+            </div>`
+    }
+    function calculateDate(dateRoad) {
+        let today = new Date();
+        dateRoad = new Date(dateRoad[0], dateRoad[1], dateRoad[2], dateRoad[3], dateRoad[4], dateRoad[5])
+        let seconds = dateRoad.getTime() - today.getTime();
+
+
+        return {
+
+            days: seconds>=0?parseInt(seconds / (1000 * 3600 * 24)):0,
+            hours: seconds>=0?parseInt((seconds / (1000 * 3600)) % 60):0,
+            minutes: seconds>=0?parseInt((seconds / (1000 * 60)) % 60):0,
+            seconds: seconds>=0?parseInt((seconds / 1000) % 60):0,
+        }
+    }
+
+
+</script>

@@ -18,7 +18,46 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+h1{
+	font-size: max(2.8125vw,1.875rem);
+	line-height: max(3.5vw,2.375rem);
+	color:#fff;
+	width: max(32vw,340px);
+	text-transform: uppercase;
+	text-align: center;
+	font-family: DecimaMonoPro-Bold;
+}
+
+h2{
+	font-size: max(2.1875vw,2.625rem);
+	text-transform: uppercase;
+	font-family: DecimaMonoPro;
+}
+
+h3{
+	font-size: max(1.25vw,1.5rem);
+	text-transform: uppercase;
+	font-family: DecimaMonoPro;
+}
+@media(max-width:500px) {
+
+h1{
+		font-size: 8.33vw;
+        width: 94.44vw;
+        line-height: 9.5vw;
+}
+
+h2{
+	font-size: 6.66vw;
+	
+}
+
+h3{
+	text-transform: none;
+	font-size:1rem ;
+}
+
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -26,6 +65,13 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	 font-family:DecimaMonoPro;
+	 max-width: 2560px;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+
+a{
+    text-decoration: none;
 }
 ol, ul {
 	list-style: none;
@@ -47,4 +93,16 @@ table {
     font-family:'DecimaMonoPro';
     src: url(../global/assets/fonts/DecimaMonoPro.ttf);
 }
+@font-face {
+    font-family:'DecimaMonoPro-Bold';
+    src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
+}
+@font-face {
+    font-family:'DecimaMonoProLt';
+    src: url(../global/assets/fonts/DecimaMonoProLt.ttf);
+}
 
+@font-face {
+    font-family:'DecimaMonoPro-BoldItalic';
+    src: url(../global/assets/fonts/DecimaMonoPro-BoldItalic.ttf);
+}
