@@ -207,7 +207,7 @@
 .last-news{
     margin-top: 100px;
 }
-.last-news__grid{
+.last-news__grid-DK{
     margin-top: 55px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -215,10 +215,7 @@
    
     grid-column-gap: max(1.56vw,30px);
 }
-.last-news__new-box{
-display: flex;    
-flex-direction: column;
-}
+
 .new-box__img{
     width: 100%;
     height: auto;
@@ -269,6 +266,9 @@ flex-direction: column;
     margin-right: 7px;
     margin-bottom: 7px;
     padding: 8px;
+}
+.last-news__grid-MB{
+display:none
 }
 @media(max-width:1300px) {
 
@@ -324,6 +324,72 @@ flex-direction: column;
         margin-top: 55px;
         width: fit-content;
         grid-column-gap: 1vw;
+    }
+    .last-news__grid-DK{
+        grid-template-columns: 100%;
+      }
+      .box-1{
+        grid-column: 1; 
+        grid-row:1;    
+    }
+    .box-4{
+        grid-column: 1; 
+        grid-row:2;
+    }
+    .box-7{
+        grid-column: 1; 
+        grid-row:3;
+    }
+    .box-10{
+        grid-column: 1; 
+        grid-row:4;
+    }
+    .box-13{
+        grid-column: 1; 
+        grid-row:5;
+    }
+    .box-2{
+        grid-column: 1; 
+        grid-row:6;
+    }
+    .box-5{
+        grid-column: 1; 
+        grid-row:7;
+    }
+    .box-8{
+        grid-column: 1; 
+        grid-row:8;
+    }
+    .box-11{
+        grid-column: 1; 
+        grid-row:9;
+    }
+    .box-14{
+        grid-column: 1; 
+        grid-row:10;
+    }
+    .box-3{
+        grid-column: 1; 
+        grid-row:11;
+    }
+    .box-6{
+        grid-column: 1; 
+        grid-row:12;
+    }
+    .box-9{
+        grid-column: 1; 
+        grid-row:13;
+    }
+    .box-12{
+        grid-column: 1; 
+        grid-row:14;
+    }
+    .box-15{
+        grid-column: 1; 
+        grid-row:15;
+    }
+    .new-box__tags{
+        margin-bottom: 40px;
     }
 }
 
@@ -411,4 +477,15 @@ flex-direction: column;
 
         margin-top: 30px;
     }
+    .last-news__grid-DK{
+        margin-top: 30px;
+    }
+    .last-news__grid-MB{
+        display:flex;
+        }
+        .last-news__grid-DK{
+            display:none;
+            }
+    
 }
+
