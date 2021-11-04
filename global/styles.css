@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,91 +86,177 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-h1{
-	font-size: max(2.8125vw,1.875rem);
-	line-height: max(3.5vw,2.375rem);
-	color:#fff;
-	width: max(32vw,340px);
-	text-transform: uppercase;
-	text-align: center;
-	font-family: DecimaMonoPro-Bold;
-}
 
-h2{
-	font-size: max(2.1875vw,2.625rem);
-	text-transform: uppercase;
-	font-family: DecimaMonoPro;
-}
-
-h3{
-	font-size: max(1.25vw,1.5rem);
-	text-transform: uppercase;
-	font-family: DecimaMonoPro;
-}
-@media(max-width:500px) {
-
-h1{
-		font-size: 8.33vw;
-        width: 94.44vw;
-        line-height: 9.5vw;
-}
-
-h2{
-	font-size: 6.66vw;
-	
-}
-
-h3{
-	text-transform: none;
-	font-size:1rem ;
-}
-
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
-	 font-family:DecimaMonoPro;
-	 max-width: 2560px;
-	 margin-left: auto;
-	 margin-right: auto;
+	font-family: DecimaMonoPro;
+	max-width: 2560px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
+	color:unset;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 @font-face {
-    font-family:'DecimaMonoPro';
-    src: url(../global/assets/fonts/DecimaMonoPro.ttf);
-}
-@font-face {
-    font-family:'DecimaMonoPro-Bold';
-    src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
-}
-@font-face {
-    font-family:'DecimaMonoProLt';
-    src: url(../global/assets/fonts/DecimaMonoProLt.ttf);
+	font-family: 'DecimaMonoPro';
+	src: url(../global/assets/fonts/DecimaMonoPro.ttf);
 }
 
 @font-face {
-    font-family:'DecimaMonoPro-BoldItalic';
-    src: url(../global/assets/fonts/DecimaMonoPro-BoldItalic.ttf);
+	font-family: 'DecimaMonoPro-Bold';
+	src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
 }
+
+@font-face {
+	font-family: 'DecimaMonoProLt';
+	src: url(../global/assets/fonts/DecimaMonoProLt.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoPro-BoldItalic';
+	src: url(../global/assets/fonts/DecimaMonoPro-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoPro-Italic';
+	src: url(../global/assets/fonts/DecimaMonoPro-Italic.ttf);
+}
+
+@font-face {
+	font-family: 'ToyotaType-Regular';
+	src: url(../global/assets/fonts/ToyotaType-Regular.ttf);
+}
+
+
+h1 {
+	font-size: max(2.8125vw, 1.875rem);
+	line-height: max(3.5vw, 2.375rem);
+	color: #fff;
+	width: max(32vw, 340px);
+	text-transform: uppercase;
+	text-align: center;
+	font-family: DecimaMonoPro-Bold;
+}
+
+h2 {
+	font-size: max(2.1875vw, 2.625rem);
+	text-transform: uppercase;
+	font-family: DecimaMonoPro;
+	
+}
+
+h3 {
+	font-size: max(1.25vw, 1.5rem);
+	text-transform: uppercase;
+	font-family: DecimaMonoPro;
+}
+
+.button {
+	width: 260px;
+	height: 45px;
+
+	background: #E60010;
+	-webkit-transform: skew(-12deg);
+	-moz-transform: skew(-12deg);
+	-ms-transform: skew(-12deg);
+	-o-transform: skew(-12deg);
+	transform: skew(-12deg);
+	color: #fff;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: DecimaMonoPro-Italic;
+}
+
+.button:hover{
+	cursor: pointer;
+}
+.button__img{
+	width: 23px;
+		height: auto;
+		margin-left: 10px;
+}
+.button a {
+	height: fit-content;
+    display: flex;
+    align-items: center;
+}
+.center-content{
+	
+	width: 100%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media(max-width:1200px){
+	.center-content{
+	
+		width: 90%;
+	
+	}
+}
+
+@media(max-width:500px) {
+
+	h1 {
+		font-size: 8.33vw;
+		width: 94.44vw;
+		line-height: 9.5vw;
+	}
+
+	h2 {
+		font-size: 6.66vw;
+		line-height: 10vw;
+	}
+
+	h3 {
+		text-transform: none;
+		font-size: 1rem;
+	}
+
+
+
+}
+
