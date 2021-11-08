@@ -1,3 +1,33 @@
+@font-face {
+	font-family: 'DecimaMonoPro';
+	src: url(../global/assets/fonts/DecimaMonoPro.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoPro-Bold';
+	src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoProLt';
+	src: url(../global/assets/fonts/DecimaMonoProLt.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoPro-BoldItalic';
+	src: url(../global/assets/fonts/DecimaMonoPro-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: 'DecimaMonoPro-Italic';
+	src: url(../global/assets/fonts/DecimaMonoPro-Italic.ttf);
+}
+
+@font-face {
+	font-family: 'ToyotaType-Regular';
+	src: url(../global/assets/fonts/ToyotaType-Regular.ttf);
+}
+
 html,
 body,
 div,
@@ -137,37 +167,14 @@ table {
 	border-spacing: 0;
 }
 
-@font-face {
-	font-family: 'DecimaMonoPro';
-	src: url(../global/assets/fonts/DecimaMonoPro.ttf);
-}
 
-@font-face {
-	font-family: 'DecimaMonoPro-Bold';
-	src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
-}
+  .img--DK {
+        display: block;
+    }
 
-@font-face {
-	font-family: 'DecimaMonoProLt';
-	src: url(../global/assets/fonts/DecimaMonoProLt.ttf);
-}
-
-@font-face {
-	font-family: 'DecimaMonoPro-BoldItalic';
-	src: url(../global/assets/fonts/DecimaMonoPro-BoldItalic.ttf);
-}
-
-@font-face {
-	font-family: 'DecimaMonoPro-Italic';
-	src: url(../global/assets/fonts/DecimaMonoPro-Italic.ttf);
-}
-
-@font-face {
-	font-family: 'ToyotaType-Regular';
-	src: url(../global/assets/fonts/ToyotaType-Regular.ttf);
-}
-
-
+	.img--MB {
+        display: none;
+    }
 h1 {
 	font-size: max(2.8125vw, 1.875rem);
 	line-height: max(3.5vw, 2.375rem);
@@ -191,23 +198,34 @@ h3 {
 	font-family: DecimaMonoPro;
 }
 
-.button {
-	width: 260px;
-	height: 45px;
 
-	background: #E60010;
+
+.button {
+
+    width: fit-content;
+    padding: 16px 23.5px 15px 23.5px;
 	-webkit-transform: skew(-12deg);
 	-moz-transform: skew(-12deg);
 	-ms-transform: skew(-12deg);
 	-o-transform: skew(-12deg);
 	transform: skew(-12deg);
-	color: #fff;
+	
 	font-size: 0.75rem;
 	text-transform: uppercase;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: DecimaMonoPro-Italic;
+}
+
+.button--primary{
+background-color:#E60010 ;
+color: #fff;
+}
+
+.button--secondary{
+background-color: #fff;
+color: black;
 }
 
 .button:hover{
@@ -225,17 +243,43 @@ h3 {
 }
 .center-content{
 	
-	width: 100%;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
-@media(max-width:1200px){
-	.center-content{
-	
-		width: 90%;
-	
+.center-content--margin{
+width: 100%;
+}
+.center-content--no-margin{
+	width: 100%;
 	}
+.banner{
+	position: relative;
+}
+.banner__img{
+	width: 100%;
+}
+.banner__content{
+	
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.display--MB{display: none;}
+
+.display--DK{display: block;}
+
+@media(max-width:1200px){
+	.center-content--margin{
+		width: 95%;
+		}
+		
 }
 
 @media(max-width:500px) {
@@ -257,6 +301,17 @@ h3 {
 	}
 
 
+	.img--DK {
+        display: none;
+    }
+
+	.img--MB {
+        display: block;
+    }
+
+	.display--MB{display: block;}
+
+	.display--DK{display: none;}
 
 }
 
