@@ -1,15 +1,4 @@
-.header__container {
-    width: 100%;
-    position: relative;
-}
 
-.header__text {
-    position: absolute;
-    bottom: 14.5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
 .header__phrase {
     font-size: max(2.8125vw, 30px);
@@ -21,14 +10,8 @@
     font-family: DecimaMonoPro-Bold;
 }
 
-.header__img {
-    width: 100%;
-    height: auto;
-}
 
-.header__img--DK {
-    display: block;
-}
+
 
 
 
@@ -36,12 +19,13 @@
 .prox-carrera {
 
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .prox-carrera__text {
     font-size: 0.875rem;
     margin-top: 20px;
-    margin-bottom: 100px;
+  
     line-height: 1.3rem;
 }
 
@@ -129,7 +113,7 @@
     grid-gap: 10px;
     background-color: transparent;
     color: #000;
-    margin-top: 55px;
+
     width: fit-content;
     grid-column-gap: 3vw;
 }
@@ -161,7 +145,9 @@
 }
 
 
-
+.introduction{
+    padding-top: 80px;
+}
 
 
 .clasif__logo-img {
@@ -211,10 +197,11 @@
     justify-content: end;
 }
 .last-news{
-    margin-top: 100px;
+   padding-top: 100px;
+   padding-bottom: 80px;
 }
 .last-news__grid-DK{
-    margin-top: 55px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
@@ -276,9 +263,7 @@
 .last-news__grid-MB{
     display:none
 }
-.banner--home{
-    margin-top:80px;
-}
+
 .banner__content--center{
     top: 36%;
 }
@@ -291,11 +276,10 @@
     line-height: 3.2rem;
 }
 
-.clasificacion {
-    margin-top: 100px;
-}
+
 .patrocinadores{
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .patrocinadores__grandes{
     display: flex;
@@ -308,7 +292,7 @@
     display: flex;
     justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-bottom: 120px;
+     
           
 }
 .patrocinadores__grandes-img{
@@ -355,7 +339,7 @@ align-items: center;
         grid-gap: 10px;
         background-color: transparent;
         color: #000;
-        margin-top: 55px;
+     
         width: fit-content;
         grid-column-gap: 1vw;
     }
@@ -386,7 +370,7 @@ align-items: center;
         grid-gap: 10px;
         background-color: transparent;
         color: #000;
-        margin-top: 55px;
+  
         width: fit-content;
         grid-column-gap: 1vw;
     }
@@ -464,8 +448,14 @@ align-items: center;
       
         margin-top: 30px;
     }
-    .banner--home {
-        margin-top: 60px;
+  
+
+    .introduction{
+        padding-top: 50px;
+    }
+    .patrocinadores{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
@@ -475,18 +465,14 @@ align-items: center;
         padding-top: 50px;
     }
 
-    .header__text {
-        bottom: 20px;
-    }
+  
     .title-clasif{
         display: block;
         width: 95%;
         margin-left: auto;
         margin-right: auto;
     }
-    .clasificacion {
-        margin-top: 50px;
-    }
+
 
     .header__phrase {
         font-size: 8.33vw;
@@ -498,7 +484,7 @@ align-items: center;
     .prox-carrera__text {
         font-size: 1rem;
         margin-top: 10px;
-        margin-bottom: 30px;
+       
     }
 
     .prox-carrera__cron-container {
@@ -541,7 +527,8 @@ align-items: center;
 
 
     .last-news{
-        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 60px;
     }
     .last-news__grid-DK{
         margin-top: 30px;

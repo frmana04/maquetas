@@ -189,6 +189,7 @@ h2 {
 	font-size: max(2.1875vw, 2.625rem);
 	text-transform: uppercase;
 	font-family: DecimaMonoPro;
+	margin-bottom: 55px;
 	
 }
 
@@ -197,7 +198,22 @@ h3 {
 	text-transform: uppercase;
 	font-family: DecimaMonoPro;
 }
+.header__container {
+    width: 100%;
+    position: relative;
+}
 
+.header__text {
+    position: absolute;
+    bottom: 14.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header__img {
+    width: 100%;
+    height: auto;
+}
 
 
 .button {
@@ -293,6 +309,7 @@ width: 100%;
 	h2 {
 		font-size: 6.66vw;
 		line-height: 10vw;
+		margin-bottom: 30px;
 	}
 
 	h3 {
@@ -308,7 +325,9 @@ width: 100%;
 	.img--MB {
         display: block;
     }
-
+	.header__text {
+        bottom: 20px;
+    }
 	.display--MB{display: block;}
 
 	.display--DK{display: none;}
