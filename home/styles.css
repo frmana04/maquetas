@@ -12,7 +12,9 @@
 
 
 
-
+.header__text-home{
+    width: max(32vw, 340px);
+}
 
 
 
