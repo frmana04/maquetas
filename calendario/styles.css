@@ -1,0 +1,160 @@
+.introduccion{
+    padding-top: 100px;
+}
+
+.calendario__text {
+    font-size: 0.875rem;
+    margin-top: 20px;
+  
+    line-height: 1.3rem;
+}
+
+.item-ronda {
+    grid-area: ronda;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top:13px;
+  
+  }
+  .item-lugar {
+    grid-area: lugar;
+    
+  }
+  .item-info {
+    grid-area: info;
+    
+  }
+  .item-cta1 {
+    grid-area: cta1;
+    justify-self: end;
+    
+  }
+  .item-cta2 {
+    grid-area: cta2;
+    justify-self: end;
+    
+  }
+  
+  .item-clasificacion {
+    display: grid;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 40px;
+    grid-template-columns: 80px auto 200px;
+    grid-template-rows: 67px 67px;
+    grid-template-areas: 
+      "ronda lugar cta1"
+      "ronda info  cta2"
+  }
+  .calendario__ronda-text{
+    font-size: 1.125rem;
+    color:#E60010;
+    text-transform: uppercase;
+    font-family: ToyotaType-RegularIt;
+    
+  }
+  .calendario__ronda-number{
+      font-size: 3.65rem;
+      font-family: ToyotaType-Book;
+      
+}
+.calendario__ronda-lugar{
+    padding-top: 8px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.calendario__ronda-info{
+  font-size: 0.875rem;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+.calendario__ronda-fecha{
+  margin-bottom: 4px;
+}
+.calendario{
+    padding-top: 42px;
+}
+
+ @media(max-width:768px){
+  .item-clasificacion {
+    
+    grid-template-rows: auto auto;
+    padding-bottom: 10px;
+} 
+.introduccion{
+  padding-top: 50px;
+}
+.calendario__ronda-lugar{
+  font-size: 1.125rem;
+}
+
+.calendario__ronda-text{
+  font-size: 0.8rem;
+ 
+}
+
+.calendario__ronda-number{
+  font-size: 3rem;
+ 
+}
+
+ }
+@media(max-width:500px){
+    .introduction__text {
+        font-size: 1rem;
+        margin-top: 10px;
+       
+    }
+    .introduction__title{
+      font-size: 1rem;
+      text-transform: none;
+      margin-bottom: 0;
+    }
+
+    .calendario__ronda-text{
+      font-size: 0.625rem;
+     
+    }
+    .calendario__ronda-lugar{
+      padding-left: 0;
+      padding-bottom: 18px;
+    }
+    .calendario__ronda-info{
+      padding-left: 0;
+      padding-bottom: 25px;
+    }
+    .calendario__ronda-number{
+      font-size: 2.125rem;
+     
+    }
+    .item-clasificacion {
+
+      grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66% ;
+      grid-template-rows: auto auto auto;
+      padding-bottom: 30px;
+    grid-template-areas: 
+    "ronda lugar lugar lugar lugar lugar"
+    "ronda info  info info info  info "
+    "cta1 cta1 cta1 cta2 cta2 cta2"
+
+  }
+
+  
+  .item-cta1 {
+   
+    justify-self: center;
+    
+  }
+  .item-cta2 {  
+   
+    justify-self:center;
+    
+  }
+  .item-ronda {
+    align-items: flex-start;
+   
+  
+  }
+}
