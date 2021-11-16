@@ -38,7 +38,7 @@
   
   .item-clasificacion {
     display: grid;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid #B2B2B2;
     margin-bottom: 40px;
     grid-template-columns: 80px auto 200px;
     grid-template-rows: 67px 67px;
