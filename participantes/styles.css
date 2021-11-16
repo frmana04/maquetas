@@ -14,6 +14,14 @@ height: fit-content;
   width: 100%;
   display: flex;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.no-display{
+  display: none;
+}
+.equipo__resumen:hover{
+cursor: pointer;
 }
 
 .equipo__logo{
@@ -45,7 +53,9 @@ height: auto;
  
   
 }
-
+.equipo__mostrar:hover{
+cursor: pointer;  
+}
 .equipo__mostrar-arrow{
   width: 10px;
   height: auto;
@@ -55,14 +65,25 @@ height: auto;
 
 .equipo__pilotos{
   width: 100%;
-  display: grid;
+  display: none;
   grid-template-columns: 48.75% 48.75%;
   grid-template-rows: auto;
   column-gap: 2.5%;
   margin-bottom: 35px;
 
 }
-
+.equipo__pilotos--image{
+  width: 100%;
+  display: none;
+  grid-template-columns: 48.75% 48.75%;
+  grid-template-rows: auto;
+  column-gap: 2.5%;
+  margin-bottom: 35px;
+  grid-template-areas: 
+  "image image"
+  "equipo__piloto1 equipo__piloto2"
+ 
+}
 .piloto__img{
   width: 100%;
   height: auto;
@@ -80,6 +101,21 @@ height: auto;
 }
 .piloto__text{
   line-height: 1.4rem;
+}
+.equipo__piloto-separador{
+  display: none;
+}
+.equipo__pilotos-img{
+  grid-area: image;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+.equipo_piloto--1{
+  grid-area: equipo__piloto1;
+}
+.equipo_piloto--2{
+  grid-area: equipo__piloto2;
 }
 @media(max-width:768px){
   .equipo__mostrar-texto{
@@ -107,12 +143,59 @@ height: auto;
   .equipo {
   
    border-bottom: none;
-  height: 110px;
+
   
   }
+   .equipo__pilotos{
   
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+   row-gap: 40px;
+    margin-bottom: 35px;
+  
+  } 
 
+  .equipo__pilotos--image{
+  
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+   row-gap: 40px;
+    margin-bottom: 35px;
+    grid-template-areas: 
+    "image"
+    "equipo__piloto1"
+    "equipo__piloto-separador"
+    "equipo__piloto2"
+  
+  
+  } 
+  .equipo__piloto-separador{
+    display: block;
+    background-color:#EFEFEF;
+    height: 10px;
+   
+   
+  }
+  .equipo__piloto-separador--big{
+    grid-area: equipo__piloto-separador;
+  }
+.piloto__img{
+  margin-bottom: 20px;
+}
+.equipo__pilotos-img{
+  margin-bottom: 20px;
+}
+.piloto__info{
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.piloto__text{
+  padding-left: 10px;
+}
   .equipo__mostrar{
     padding-right: 10px;
+  }
+  .piloto__info-fecha{
+    font-size: 0.75rem;
   }
   }
