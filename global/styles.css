@@ -1,4 +1,16 @@
 
+
+@font-face {
+	font-family: 'DecimaMonoPro-Bold';
+	src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
+}
+
+
+@font-face {
+	font-family: 'DecimaMonoPro-Italic';
+	src: url(../global/assets/fonts/DecimaMonoPro-Italic.ttf);
+}
+
 @font-face {
 	font-family: 'ToyotaType-Book';
 	src: url(../global/assets/fonts/ToyotaType-Book.ttf);
@@ -143,7 +155,6 @@ section {
 
 body {
 	line-height: 1;
-	font-family: ToyotaType-Regular;
 	max-width: 2560px;
 	margin-left: auto;
 	margin-right: auto;
@@ -192,7 +203,7 @@ h1 {
 
 	text-transform: uppercase;
 	text-align: center;
-	font-family: ToyotaType-Semibold;
+	font-family: DecimaMonoPro-Bold;
 }
 
 h2 {

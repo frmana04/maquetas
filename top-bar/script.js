@@ -107,8 +107,10 @@ function createMenu() {
             return(`<a class="bar__link" onclick="${option.id=="opt4"?'setLanguage('+"\'"+subOption.name+"\'"+')':''}" href="${subOption.url}"><div class="bar__submenu-opt"><span class="bar__submenu-text">${subOption.name}</span><div class="bar__arrow-container-right"><img class="bar__arrow-img" src="assets/images/arrow_right.png"></div></div></a>`)
         }).join("")}    
         </div>
-    
+        ${option.id=="opt3"? "<div class='bar__separator'>|</div>":""}
+   
     </div>
+    
     `
        if (device=="DK"){
         document.querySelector('.bar__options--DK').innerHTML = htmlText;
@@ -125,7 +127,8 @@ function createMenu() {
 
 function setLanguage(language){
 
-    document.querySelector('#opt4').querySelector('.bar__text').innerHTML=language;
+
+   // document.querySelector('#opt4').querySelector('.bar__text').innerHTML=language;
 
 }
 
