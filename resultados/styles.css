@@ -1,0 +1,97 @@
+.header__text-resultados{
+    width: max(32vw, 340px);
+}
+.resultados{
+    margin-top: 75px;
+    overflow-x: auto;
+}
+.grid-clasif{
+    overflow-x: auto;
+    width: 1270px;
+}
+.center-content--resultados{
+	
+	max-width: 1270px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid-clasif__first-row{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: DecimaMonoPro;
+    display: flex;
+    height: 75px;
+   
+}
+
+.grid-clasif__equipos-row{
+   
+    font-size: 1rem;
+    font-family: ToyotaType-Regular;
+    display: flex;
+    height: 95px;
+   
+}
+
+.grid-clasif__ronda{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px ;
+}
+
+.grid-clasif__equipo{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px ;
+}
+.grid-clasif__piloto{
+    width: 220px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px ;
+}
+.grid-clasif__pos{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px ;
+}
+.grid-clasif__equipos-row-ronda{
+    display: flex;
+    flex-direction: column;
+}
+.grid-clasif__points1{
+    text-align: center;
+}
+.grid-clasif__equipos-row-pos{
+    align-items: center;
+    padding-top: 0;
+}
+.grid-clasif__equipos-row-piloto{
+    align-items: center;
+    padding-top: 0;
+   
+}
+.grid-clasif__points2{
+    color:#999999;
+    text-align: center;
+    margin-top: 3px;
+}
+.grid-clasif__equipos-row-equipo{
+    padding-top: 0;
+    align-items: center;
+
+}
+.grid-clasif__equipos-row-ronda{
+    text-align: center;
+    padding-top: 0;
+}
+.grid-clasif__logo-img{
+    width: 75px;
+    height: auto;
+}
+.par {
+    background-color:#F2F2F2 ;
+}
