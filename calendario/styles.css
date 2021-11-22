@@ -8,7 +8,11 @@
   
     line-height: 1.3rem;
 }
+.introduccion__text{
+  font-family: ToyotaType-Regular;
+  line-height: 1.5rem;
 
+}
 .item-ronda {
     grid-area: ronda;
     display: flex;
@@ -28,11 +32,15 @@
   .item-cta1 {
     grid-area: cta1;
     justify-self: end;
+    font-family: DecimaMonoPro-Italic;
+
     
   }
   .item-cta2 {
     grid-area: cta2;
     justify-self: end;
+    font-family: DecimaMonoPro-Italic;
+
     
   }
   
@@ -50,12 +58,13 @@
     font-size: 1.125rem;
     color:#E60010;
     text-transform: uppercase;
-    font-family: ToyotaType-RegularIt;
+    font-family: DecimaMonoProLt-Italic;
     
   }
   .calendario__ronda-number{
-      font-size: 3.65rem;
-      font-family: ToyotaType-Book;
+      font-size: 3.125rem;
+      font-family: DecimaMonoPro;
+
       
 }
 .calendario__ronda-lugar{
@@ -64,11 +73,17 @@
     text-transform: uppercase;
     padding-left: 30px;
     padding-bottom: 10px;
+    font-family: DecimaMonoPro;
 }
-.calendario__ronda-info{
+.calendario__ronda-info-DK{
   font-size: 0.875rem;
   padding-left: 30px;
   padding-bottom: 10px;
+  font-family: DecimaMonoPro;
+
+}
+.calendario__ronda-info-MB{
+ display: none;
 }
 .calendario__ronda-fecha{
   margin-bottom: 4px;
@@ -78,6 +93,13 @@
 }
 
  @media(max-width:768px){
+
+  .introduccion__text {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-family: DecimaMonoPro;
+}
+
   .item-clasificacion {
     
     grid-template-rows: auto auto;
@@ -102,11 +124,7 @@
 
  }
 @media(max-width:500px){
-    .introduction__text {
-        font-size: 1rem;
-        margin-top: 10px;
-       
-    }
+
     .introduction__title{
       font-size: 1rem;
       text-transform: none;
@@ -121,13 +139,24 @@
       padding-left: 0;
       padding-bottom: 18px;
     }
-    .calendario__ronda-info{
+    .calendario__ronda-info-DK{
+     display: none;
+    }
+    .calendario__ronda-info-MB{
+      font-size: 0.875rem;
+      padding-left: 30px;
+      padding-bottom: 10px;
+      font-family: DecimaMonoPro;
       padding-left: 0;
       padding-bottom: 25px;
+      display: block;
     }
     .calendario__ronda-number{
       font-size: 2.125rem;
      
+    }
+    .calendario__ronda-fecha{
+      line-height: 1.2rem;
     }
     .item-clasificacion {
 
