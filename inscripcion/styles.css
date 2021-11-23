@@ -1,5 +1,11 @@
 .inscripcion{
-    position: relative;
+    background-image: url(./assets/images/1920-Fondo-Inscripcion@2x.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 70%;
+
 }
 
 .inscripcion__content{
@@ -32,8 +38,31 @@
     max-width: 1140px;
     font-family: ToyotaType-Regular;
     margin-bottom: 22px;
+    line-height: 1.4rem;
 
 }
 .inscripcion__bg-img{
     width: 100%;
 }
+@media(max-width:900px){
+   .inscripcion__img{
+       width: 90%;
+   }
+   .inscripcion__text{
+    width: 90%;
+   }
+}
+
+@media(max-width:500px){
+    .inscripcion__img{
+        width: 90%;
+    }
+    .inscripcion__text{
+        font-family: DecimaMonoPro;
+        line-height: 1.6rem;
+        font-size: 1.125rem;
+        width: 87%;
+
+    }
+  
+ }
