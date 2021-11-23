@@ -1,0 +1,39 @@
+.inscripcion{
+    position: relative;
+}
+
+.inscripcion__content{
+    position: absolute;
+    width: 100%;
+    top:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inscripcion__img{
+    width: 821px;
+    height: auto;
+    margin-bottom: 53px;
+}
+.button--inscripcion{
+    
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.inscripcion__text{
+    font-size: 1.125rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 1140px;
+    font-family: ToyotaType-Regular;
+    margin-bottom: 22px;
+
+}
+.inscripcion__bg-img{
+    width: 100%;
+}
