@@ -11,10 +11,10 @@
     overflow-x: auto;
     width: 1270px;
     transform: rotateX(180deg);
-    height: 600px;
-    overflow-y: auto;
+
 
 }
+
 .center-content--resultados{
 	
 	max-width: 1270px;
@@ -27,15 +27,31 @@
     font-family: DecimaMonoPro;
     display: flex;
     height: 75px;
+    border-bottom: lightgrey 1px solid;
    
 }
+.grid-clasif__junior{
+    border-radius: 40px;
+    background-color: #E60010;
+    width: fit-content;
+    padding: 5px 8px 5px 8px;
+    border:none;
+    color:#fff;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: DecimaMonoPro;
 
+}
 .grid-clasif__equipos-row{
    
     font-size: 1rem;
     font-family: ToyotaType-Regular;
     display: flex;
-    height: 95px;
+    height: 120px;
+    border-bottom: lightgrey 1px solid;
    
 }
 
@@ -76,8 +92,11 @@
     padding-top: 0;
 }
 .grid-clasif__equipos-row-piloto{
-    align-items: center;
+    justify-content: space-evenly;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    
    
 }
 .grid-clasif__points2{
@@ -123,4 +142,94 @@
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #ffffff;
+}
+.container-blur{
+    position: relative;
+}
+#last-column-blur{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    right: 0;
+}
+.explicacion{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.explicacion__text {
+   
+        font-size: 1rem;
+        margin-top: 20px;
+        font-family: ToyotaType-Regular;
+        line-height: 1.3rem; 
+}
+.button--reglamento {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 66px;
+}
+@media (max-width:1200px){
+    .grid-clasif{
+        height: fit-content;
+        overflow-y: auto;
+    }
+    
+    .blur-element{
+        position: absolute;
+        width: 66px;
+        height: 100%;
+        z-index: 1;
+        right: 0;
+        top: 10px;
+        background: linear-gradient(to right,rgba(255,255,255,0.6) 0%,rgba(255,255,255,1) 100%);
+    }
+}
+
+@media(max-width:500px) {
+
+    .grid-clasif__pos{
+        width: 70px;
+      
+    }
+    .grid-clasif__piloto{
+        width: 200px;
+        padding-left: 20px;
+    }
+
+    .grid-clasif__pos {
+      
+       width: 30px;
+       
+        padding-left: 5px;
+    }
+
+    .grid-clasif__equipos-row-piloto {
+       font-family:DecimaMonoPro;
+    }
+
+    .grid-clasif__logo-img {
+        width: 60px;
+       
+    }
+    .resultados {
+        margin-top: 60px;
+    }
+    .grid-clasif__equipos-row{
+   
+        height: 90px;
+    }
+    .explicacion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .explicacion__text {
+   
+     
+        font-family: DecimaMonoPro;
+        
+}
+.button--reglamento {
+    
+    margin-top: 30px;
+}
 }
