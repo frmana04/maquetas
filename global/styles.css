@@ -333,9 +333,13 @@ width: 100%;
 
 .display--DK{display: block;}
 
+.display--MB-inline{display: none;}
+
+.display--DK-inline{display: inline;}
+
 @media(max-width:1200px){
 	.center-content--margin{
-		width: 95%;
+		width: 90%;
 		}
 		
 }
@@ -376,6 +380,10 @@ width: 100%;
 	.display--MB{display: block;}
 
 	.display--DK{display: none;}
+
+	.display--DK-inline{display: none;}
+
+.display--MB-inline{display: inline;}
 
 }
 

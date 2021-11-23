@@ -1,0 +1,120 @@
+.reglas{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.regla{
+    margin-bottom: 80px;
+}
+.regla__style-h3{
+    color:#E60010;
+    font-family: DecimaMonoPro-Bold;
+    font-size: 2.125rem;
+   
+}
+
+.regla__info{
+    font-family: ToyotaType-Regular;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    line-height: 1.3rem;
+}
+
+.regla__images-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.regla__image-block{
+    display: flex;
+    flex-direction: column;
+    width: 31.5%;
+   
+}
+
+.regla__img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.regla__title{
+    font-family: DecimaMonoPro;
+    font-size: 0.875rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+
+.regla__text{
+    font-family: ToyotaType-Regular;
+    font-size: 0.75rem;
+}
+
+.buttons-reglamento {
+   display: flex;
+   justify-content: center;
+    margin-top: 50px;
+}
+.button--reglamento{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.button__img--reglamento{
+	width: 12px;
+		height: 16px;
+		margin-left: 10px;
+}
+
+@media(max-width:600px) {
+
+    .regla__images-block{
+       flex-direction: column;
+        justify-content:unset;
+        align-items: center;
+    }
+
+    .regla__image-block{
+    
+    width:100%;
+    margin-bottom: 50px;
+   
+}
+.regla__info{
+    font-family: DecimaMonoPro;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.regla__title{
+   
+    font-size: 1rem;
+  
+}
+.regla__style-h3{
+    margin-right: 8px;
+}
+.reglas{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.regla__text{
+    font-family: DecimaMonoPro;
+    font-size: 0.875rem;
+    line-height: 1.2rem;
+}
+.regla{
+    margin-bottom: 0;
+}
+.buttons-reglamento{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.button--reglamento{
+   
+    margin:15px 0 15px 0;
+}
+}
+
+   
