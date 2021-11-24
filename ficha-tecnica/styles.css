@@ -1,0 +1,78 @@
+.ficha-tecnica{
+    background-image: url(./assets/images/Textura@2x.png);
+    background-size: 100% 100%;
+    height: fit-content;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.h3--style{
+    font-family: DecimaMonoPro-Bold;
+}
+
+.ficha__mostrar{
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:ToyotaType-Regular;
+  
+  }
+.ficha__mostrar:hover{
+    cursor: pointer;
+}
+.ficha__mostrar-texto{
+    font-size: 1rem;
+    text-decoration: underline;
+
+  }
+
+  .ficha__mostrar-arrow{
+    width: 10px;
+    height: auto;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    margin-top: 2px;
+  }
+
+  .ficha-tecnica__title{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  }
+  .pareja__ficha{
+      background-color:#fff;
+      width: 515px;
+      padding:30px;
+      height: fit-content;
+      box-shadow: 0px 3px 56px #00000029;
+  }
+  .ficha-tecnica__caracter{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+  }
+
+  .ficha__titulo{
+      color:#E60010;
+      font-family: DecimaMonoPro-Bold;
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+      margin-bottom: 48px;
+  }
+
+  .ficha-tecnica__pareja{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  }
+  .ficha-tecnica__caracter-key{
+      font-family:ToyotaType-Semibold ;
+      max-width: 40%;
+  }
+
+  .ficha-tecnica__caracter-value{
+    font-family:ToyotaType-Regular ;
+    max-width: 60%;
+}
