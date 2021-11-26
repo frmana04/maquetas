@@ -337,7 +337,7 @@ width: 100%;
 
 .display--DK-inline{display: inline;}
 
-@media(max-width:1200px){
+@media(max-width:1320px){
 	.center-content--margin{
 		width: 90%;
 		}

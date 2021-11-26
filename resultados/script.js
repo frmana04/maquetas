@@ -1,4 +1,4 @@
-if (document.documentElement.clientWidth <= 1200) {
+if (document.documentElement.clientWidth <= 1320) {
     let options = {
         rootMargin: "0px",
         threshold: 0.5

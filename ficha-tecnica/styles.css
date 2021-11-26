@@ -1,9 +1,11 @@
 .ficha-tecnica{
-    background-image: url(./assets/images/Textura@2x.png);
+   
     background-size: 100% 100%;
     height: fit-content;
     padding-top: 80px;
     padding-bottom: 30px;
+    background: no-repeat;
+  
 }
 
 .h3--style{
@@ -15,7 +17,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family:ToyotaType-Regular;
+    font-family:DecimaMonoPro;
   
   }
 .ficha__mostrar:hover{
@@ -24,6 +26,8 @@
 .ficha__mostrar-texto{
     font-size: 1rem;
     text-decoration: underline;
+    min-width: 154px;
+    text-align: right;
 
   }
 
@@ -40,9 +44,9 @@
       justify-content: space-between;
       margin-bottom: 50px;
   }
-  .pareja__ficha{
+  .pareja__elemento-ficha{
       background-color:#fff;
-      width: 515px;
+      width: 42.9%;
       padding:30px;
       height: fit-content;
       box-shadow: 0px 3px 56px #00000029;
@@ -70,9 +74,76 @@
   .ficha-tecnica__caracter-key{
       font-family:ToyotaType-Semibold ;
       max-width: 40%;
+      width: 40%;
   }
 
   .ficha-tecnica__caracter-value{
     font-family:ToyotaType-Regular ;
     max-width: 60%;
+    width: 60%;
+    text-align: right;
+}
+
+.ficha-tecnica__lista-parejas{
+    display: none;
+}
+
+.componentes{
+    padding-top: 80px;
+}
+.componente__caracter{
+    font-family: ToyotaType-Regular;
+    margin-bottom: 10px;
+  
+   
+}
+
+.pareja__elemento-componente{
+    background-color:#fff;
+    width: 605px;
+    padding:30px;
+    height: fit-content;
+    box-shadow: 0px 3px 56px #00000029;
+    z-index: 2;
+}
+
+.componente__img{
+    width: 649px;
+    height: auto;
+}
+.componente__pareja{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 643px;
+}
+.pareja__elemento-imagen{
+    position: absolute;
+   width: fit-content;
+    height: fit-content;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+@media (max-width:980px){
+    .pareja__elemento-ficha{
+        width: 40%;
+    }
+    
+  .ficha-tecnica__pareja{
+  
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width:768px){
+    .pareja__elemento-ficha{
+        width: 37%;
+    }
+    
+    .ficha__mostrar-texto{
+        display: none;
+     
+    }
 }
