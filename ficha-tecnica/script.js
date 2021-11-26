@@ -10,15 +10,16 @@ function toggleMostrar(id) {
 function mostrarDatos(id) {
         let node = document.querySelector(`#${id}`);
 
-        node.querySelector('.ficha-tecnica__lista-parejas').style.display = "block";
+        node.querySelector('.listas-parejas').style.display = "block";
         node.querySelector('.ficha__mostrar-texto').innerHTML = "Ocultar detalles";
         node.querySelector('.ficha__mostrar-arrow').style.transform = "rotate(270deg)";
         node.dataset.state = "open";
 
         if (id == "ficha-tecnica__especificaciones") {
 
-            document.querySelector('.ficha-tecnica').style.backgroundImage = "url(./assets/images/Textura@2x.png)"
-            document.querySelector('.ficha-tecnica').style.backgroundColor = ""
+            document.querySelector('.ficha-tecnica').style.backgroundImage = "url(./assets/images/Textura@2x.png)";
+            document.querySelector('.ficha-tecnica').style.backgroundColor = "";
+            document.querySelector('.ficha-tecnica__title').style.marginBottom="38px";
         }
     
 }
@@ -26,17 +27,29 @@ function mostrarDatos(id) {
 function ocultarDatos(id) {
         let node = document.querySelector(`#${id}`);
 
-        node.querySelector('.ficha-tecnica__lista-parejas').style.display = "none";
+        node.querySelector('.listas-parejas').style.display = "none";
         node.querySelector('.ficha__mostrar-texto').innerHTML = "Mostrar detalles";
         node.querySelector('.ficha__mostrar-arrow').style.transform = "rotate(90deg)";
         node.dataset.state = "close";
 
         if (id == "ficha-tecnica__especificaciones") {
             
-            document.querySelector('.ficha-tecnica').style.backgroundImage = ""
-            document.querySelector('.ficha-tecnica').style.backgroundColor = "#F8F8F8"
+            document.querySelector('.ficha-tecnica').style.backgroundImage = "";
+            document.querySelector('.ficha-tecnica').style.backgroundColor = "#F8F8F8";
+            document.querySelector('.ficha-tecnica__title').style.marginBottom="0";
         }
     
 }
 
+
+
+function setHeights(){
+    if (document.documentElement.clientWidth > 768) {
+document.querySelectorAll('.componente__pareja').forEach(node =>{
+    node.style.height = node.querySelector('.componente__img').height+ "px"; })
+}
+}
 mostrarDatos("ficha-tecnica__especificaciones");
+mostrarDatos("ficha-tecnica__componentes");
+
+setHeights();

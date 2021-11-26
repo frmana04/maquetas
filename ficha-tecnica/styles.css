@@ -81,7 +81,7 @@
     font-family:ToyotaType-Regular ;
     max-width: 60%;
     width: 60%;
-    text-align: right;
+   
 }
 
 .ficha-tecnica__lista-parejas{
@@ -100,16 +100,23 @@
 
 .pareja__elemento-componente{
     background-color:#fff;
-    width: 605px;
-    padding:30px;
-    height: fit-content;
-    box-shadow: 0px 3px 56px #00000029;
+    width: 46.4%;
     z-index: 2;
+    
+    padding: 10px 30px 10px 30px;
+    height: fit-content;
+   
 }
 
 .componente__img{
     width: 649px;
     height: auto;
+}
+.componente__img-DK{
+display: block;
+}
+.componente__img-MB{
+    display: none;
 }
 .componente__pareja{
     position: relative;
@@ -122,28 +129,145 @@
    width: fit-content;
     height: fit-content;
     right: 0;
-    top: 0;
     z-index: 1;
+   
 }
-
+.pos-DER{
+    position: absolute;
+    right: 0;
+  
+}
+.pos-IZQ{
+    position:absolute;
+    left: 0;
+    
+}
+@media(max-width:1250px){
+    .center-content-no-margin{
+        width: 90%;
+    }
+}
 @media (max-width:980px){
     .pareja__elemento-ficha{
-        width: 40%;
+        width: 44%;
+        padding: 20px;
     }
     
   .ficha-tecnica__pareja{
   
     margin-bottom: 20px;
 }
+.ficha-tecnica__caracter-key{
+    
+    font-size: 0.875rem;
+}
+.componente__caracter{
+    font-size: 0.875rem;
+}
+.ficha-tecnica__caracter-value{
+   
+    font-size: 0.875rem;
+
+}
+.pareja__elemento-componente{
+    width: 45%;
+}
 }
 
 @media (max-width:768px){
-    .pareja__elemento-ficha{
-        width: 37%;
+   .pareja__elemento-ficha{
+        width:90%;
+        margin-bottom: 20px;
+        background: transparent;
+       
     }
-    
-    .ficha__mostrar-texto{
-        display: none;
+    .ficha-tecnica{
+        padding-top: 50px;
+        background-size: cover;
+    }
+    .ficha-tecnica__title{
      
+        margin-bottom: 38px;
     }
+    .componentes__title{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   .ficha__titulo{
+       text-transform: uppercase;
+       margin-bottom: 40px;
+       font-size: 1rem;
+   }
+    .h3--style{
+        font-family: DecimaMonoPro;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+    .ficha-tecnica__pareja {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .ficha-tecnica__caracter-key{
+        font-family: DecimaMonoPro-Bold;
+        font-size: 0.75rem;
+    }
+
+    .ficha-tecnica__caracter-value{
+        font-family: DecimaMonoPro;
+        font-size: 0.75rem;
+    text-align: left;
+    }
+.ficha__mostrar-texto{
+    display: none;
+}
+.componentes{
+padding-top: 50px;
+}
+.componente__img-DK{
+    display: none;
+    }
+    .componente__img-MB{
+        display: block;
+    }
+    .componente__pareja{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .pareja__elemento-imagen{
+        position: relative;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+ 
+  
+    .pareja__elemento-componente{
+        width: 85%;
+      
+    }
+    .componente__img{
+        width: 100%;
+    }
+    .center-content-no-margin{
+        width: 100%;
+    }
+    .componente__caracter{
+        font-size: 0.75rem;
+        font-family: DecimaMonoPro;
+        line-height: 1rem;
+    }
+    .pos-DER{
+        position: relative;
+      
+    }
+    .pos-IZQ{
+        position:relative;
+       
+    }
+}
+
+@media (max-width:500px){
+   
 }
