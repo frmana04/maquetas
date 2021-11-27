@@ -49,7 +49,27 @@ document.querySelectorAll('.componente__pareja').forEach(node =>{
     node.style.height = node.querySelector('.componente__img').height+ "px"; })
 }
 }
+
+function addEvents(){
+    document.querySelector('.galeria__grid').querySelectorAll('div').forEach(node=>{
+        node.addEventListener('click',($ev)=>{
+            openImage($ev.target.src);
+        })
+    })
+}
+
+function openImage(src){
+    document.querySelector(`.image-open`).src=src;
+    
+    document.querySelector(`.modal`).style.display="flex";
+}
+
+function closeImage(){
+    document.querySelector(`.modal`).style.display="none";
+}
+
 mostrarDatos("ficha-tecnica__especificaciones");
 mostrarDatos("ficha-tecnica__componentes");
 
 setHeights();
+addEvents()

@@ -3,6 +3,8 @@
    
     margin:  auto;
     position: relative;
+    padding: 20px;
+    background-color: #fff;
   }
   .modal {
     background-color: rgba(0,0,0,.8);
@@ -11,22 +13,29 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.2s;
+   
+    transition: all 0.5s;
     z-index: 3;
     margin: auto;
-    display: flex;
-}
-  #miModal:target{
-    opacity:1;
+   
     pointer-events:auto;
-  }
+    display: none;
+}
+
   .image-open{
       width: 50vw;
       height: auto;
   }
-
+.modal__close-img {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    top: 3px;
+    right: 4px;
+}
+.modal__close-img:hover{
+cursor: pointer;
+}
 .ficha-tecnica{
    
     background-size: 100% 100%;
@@ -176,9 +185,11 @@ display: block;
     padding-top: 80px;
 }
 .galeria__grid{
+    margin-right: auto;
+    margin-left: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 320px 320px 320px 320px 320px 320px;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     grid-template-rows: auto;
     grid-template-areas: 
       "item1 item1 item2 item2 item3 item3"
@@ -213,7 +224,9 @@ display: block;
       width: 100%;
       height: auto;
   }
- 
+  .grid__img:hover{
+    cursor:pointer;
+}
 @media(max-width:1250px){
     .center-content-no-margin{
         width: 90%;
@@ -337,6 +350,17 @@ padding-top: 50px;
     .pos-IZQ{
         position:relative;
        
+    }
+    .galeria__grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .image-open{
+        width: 75vw;
     }
 }
 
