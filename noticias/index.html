@@ -25,56 +25,76 @@
         </div>
     </section>
 
-
-
+  
+        
+        
+      
 
     <section class="news center-content center-content--margin">
 
         <h2>Noticias</h2>
-        <div id="original-grids">
+
+        <div class="news__flitro-botones">
+        <form>
+            <div class="multiselect">
+              <div class="selectBox" onclick="openCheckBoxes()">
+                <select id="select">
+                  <option>Filtrar por etiqueta</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="checkboxes">
+              
+              </div>
+            </div>
+            </form>
+
+            <div class="filtro__boton" onclick="applyFilter()">Aplicar filtros</div>
+        </div>
+        <div id="original-grids-DK">
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="1">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/1.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="2">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/2.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="3">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/3.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="1">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 1</span>
+                <span class="new-box__date">12 ago 2001</span>
             </div>
             <div class="new-box__box-info box-5" data-new="2">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 2</span>
+                <span class="new-box__date">12 ago 2002</span>
             </div>
             <div class="new-box__box-info box-6" data-new="3">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 3</span>
+                <span class="new-box__date">12 ago 2003</span>
             </div>
-            <div class="new-box__title box-7" data-new="1">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="2">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="3">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="1">Título noticia 1</div>
+            <div class="new-box__title box-8" data-new="2">Título noticia 2</div>
+            <div class="new-box__title box-9" data-new="3">Título noticia 3</div>
 
-            <div class="new-box__text box-10" data-new="1">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="1">   <div class="box__text-border">Noticia 1 Noticia</div></div>
             <div class="new-box__text box-11" data-new="2">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 2Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="3"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="3"><div class="box__text-border">Noticia 3 Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="1">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -82,8 +102,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="2">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -91,8 +111,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="3">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -106,46 +126,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="4">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/4.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="5">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/5.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="6">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/6.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="4">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 4</span>
+                <span class="new-box__date">12 ago 2004</span>
             </div>
             <div class="new-box__box-info box-5" data-new="5">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 5</span>
+                <span class="new-box__date">12 ago 2005</span>
             </div>
             <div class="new-box__box-info box-6" data-new="6">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 6</span>
+                <span class="new-box__date">12 ago 2006</span>
             </div>
-            <div class="new-box__title box-7" data-new="4">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="5">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="6">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="4">Título noticia 4</div>
+            <div class="new-box__title box-8" data-new="5">Título noticia 5</div>
+            <div class="new-box__title box-9" data-new="6">Título noticia 6</div>
 
-            <div class="new-box__text box-10" data-new="4">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="4">   <div class="box__text-border">Noticia 4 Noticia</div></div>
             <div class="new-box__text box-11" data-new="5">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 5 Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="6"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="6"><div class="box__text-border">Noticia 6 Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="4">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -153,8 +173,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="5">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -162,8 +182,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="6">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -175,46 +195,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="7">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/7.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="8">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/8.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="9">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/9.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="7">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 7</span>
+                <span class="new-box__date">12 ago 2007</span>
             </div>
             <div class="new-box__box-info box-5" data-new="8">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 8</span>
+                <span class="new-box__date">12 ago 2008</span>
             </div>
             <div class="new-box__box-info box-6" data-new="9">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 9</span>
+                <span class="new-box__date">12 ago 2009</span>
             </div>
-            <div class="new-box__title box-7" data-new="7">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="8">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="9">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="7">Título noticia 7</div>
+            <div class="new-box__title box-8" data-new="8">Título noticia 8</div>
+            <div class="new-box__title box-9" data-new="9">Título noticia 9</div>
 
-            <div class="new-box__text box-10" data-new="7">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="7">   <div class="box__text-border">Noticia 7</div></div>
             <div class="new-box__text box-11" data-new="8">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 8 Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="9"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="9"><div class="box__text-border">Noticia 9 Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="7">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -222,8 +242,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="8">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -231,8 +251,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="9">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -244,46 +264,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="10">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/10.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="11">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/11.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="12">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/12.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="10">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 10</span>
+                <span class="new-box__date">12 ago 2010</span>
             </div>
             <div class="new-box__box-info box-5" data-new="11">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 11</span>
+                <span class="new-box__date">12 ago 2011</span>
             </div>
             <div class="new-box__box-info box-6" data-new="12">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 12</span>
+                <span class="new-box__date">12 ago 2012</span>
             </div>
-            <div class="new-box__title box-7" data-new="10">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="11">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="12">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="10">Título noticia 10</div>
+            <div class="new-box__title box-8" data-new="11">Título noticia 11</div>
+            <div class="new-box__title box-9" data-new="12">Título noticia 12</div>
 
-            <div class="new-box__text box-10" data-new="10">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-11" data-new="1">
+            <div class="new-box__text box-10" data-new="10">   <div class="box__text-border">Noticia 10</div></div>
+            <div class="new-box__text box-11" data-new="11">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 11. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="12"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="12"><div class="box__text-border">Noticia 12. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="10">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -291,8 +311,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="11">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -300,8 +320,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="12">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -313,46 +333,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="13">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/13.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="14">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/14.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="15">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/15.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="13">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 13</span>
+                <span class="new-box__date">12 ago 2013</span>
             </div>
             <div class="new-box__box-info box-5" data-new="14">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 14</span>
+                <span class="new-box__date">12 ago 2014</span>
             </div>
             <div class="new-box__box-info box-6" data-new="15">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 15</span>
+                <span class="new-box__date">12 ago 2015</span>
             </div>
-            <div class="new-box__title box-7" data-new="13">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="14">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="15">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="13">Título noticia 13</div>
+            <div class="new-box__title box-8" data-new="14">Título noticia 14</div>
+            <div class="new-box__title box-9" data-new="15">Título noticia 15</div>
 
-            <div class="new-box__text box-10" data-new="13">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="13">   <div class="box__text-border">Noticia 13</div></div>
             <div class="new-box__text box-11" data-new="14">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 14. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="15"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="15"><div class="box__text-border">Noticia 15. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="13">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -360,8 +380,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="14">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -369,8 +389,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="15">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -382,46 +402,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="16">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/16.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="17">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/17.png" class="new-box__img">
             </div>
-            <div class="box-3" data-new="17">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+            <div class="box-3" data-new="18">
+                <img src="./assets/images/18.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="16">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 16</span>
+                <span class="new-box__date">12 ago 2016</span>
             </div>
             <div class="new-box__box-info box-5" data-new="17">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 17</span>
+                <span class="new-box__date">12 ago 2017</span>
             </div>
             <div class="new-box__box-info box-6" data-new="18">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 18</span>
+                <span class="new-box__date">12 ago 2018</span>
             </div>
-            <div class="new-box__title box-7" data-new="16">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="17">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="18">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="16">Título noticia 16</div>
+            <div class="new-box__title box-8" data-new="17">Título noticia 17</div>
+            <div class="new-box__title box-9" data-new="18">Título noticia 18</div>
 
-            <div class="new-box__text box-10" data-new="16">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="16">   <div class="box__text-border">Noticia 16</div></div>
             <div class="new-box__text box-11" data-new="17">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 17. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="18"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="18"><div class="box__text-border">Noticia 18. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="16">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -429,8 +449,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="17">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -438,8 +458,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="18">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -451,46 +471,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="19">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/19.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="20">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/20.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="21">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/21.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="19">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 19</span>
+                <span class="new-box__date">12 ago 2019</span>
             </div>
             <div class="new-box__box-info box-5" data-new="20">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 20</span>
+                <span class="new-box__date">12 ago 2020</span>
             </div>
             <div class="new-box__box-info box-6" data-new="21">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 21</span>
+                <span class="new-box__date">12 ago 2021</span>
             </div>
-            <div class="new-box__title box-7" data-new="19">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="20">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="21">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="19">Título noticia 19</div>
+            <div class="new-box__title box-8" data-new="20">Título noticia 20</div>
+            <div class="new-box__title box-9" data-new="21">Título noticia 21</div>
 
-            <div class="new-box__text box-10" data-new="19">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="19">   <div class="box__text-border">Noticia 19</div></div>
             <div class="new-box__text box-11" data-new="20">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 20. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="21"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="21"><div class="box__text-border">Noticia 21. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="19">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -498,8 +518,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="20">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -507,8 +527,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="21">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -520,46 +540,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="22">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/22.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="23">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/23.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="24">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/24.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="22">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
+                <span class="new-box__info">Pie de foto 22</span>
                 <span class="new-box__date">12 ago 2022</span>
             </div>
             <div class="new-box__box-info box-5" data-new="23">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 23</span>
+                <span class="new-box__date">12 ago 2023</span>
             </div>
             <div class="new-box__box-info box-6" data-new="24">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 24</span>
+                <span class="new-box__date">12 ago 2024</span>
             </div>
-            <div class="new-box__title box-7" data-new="22">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="23">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="24">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="22">Título noticia 22</div>
+            <div class="new-box__title box-8" data-new="23">Título noticia 23</div>
+            <div class="new-box__title box-9" data-new="24">Título noticia 24</div>
 
-            <div class="new-box__text box-10" data-new="22">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="22">   <div class="box__text-border">Noticia 22</div></div>
             <div class="new-box__text box-11" data-new="23">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 23. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="24"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="24"><div class="box__text-border">Noticia 24. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="22">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -567,8 +587,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="23">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -576,8 +596,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="24">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -589,46 +609,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="25">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/25.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="26">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/26.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="27">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/27.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="25">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 25</span>
+                <span class="new-box__date">12 ago 2025</span>
             </div>
             <div class="new-box__box-info box-5" data-new="26">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 26</span>
+                <span class="new-box__date">12 ago 2026</span>
             </div>
             <div class="new-box__box-info box-6" data-new="27">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 27</span>
+                <span class="new-box__date">12 ago 2027</span>
             </div>
-            <div class="new-box__title box-7" data-new="25">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="26">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="27">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="25">Título noticia 25</div>
+            <div class="new-box__title box-8" data-new="26">Título noticia 26</div>
+            <div class="new-box__title box-9" data-new="27">Título noticia 27</div>
 
-            <div class="new-box__text box-10" data-new="25">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="25">   <div class="box__text-border">Noticia 25</div></div>
             <div class="new-box__text box-11" data-new="26">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 26. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="27"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="27"><div class="box__text-border">Noticia 27. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="25">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -636,8 +656,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="26">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -645,8 +665,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="27">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -657,46 +677,46 @@
         <div class="news__grid-DK"  >
 
             <div class="box-1" data-new="28">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/28.png" class="new-box__img">
             </div>
             <div class="box-2" data-new="29">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/29.png" class="new-box__img">
             </div>
             <div class="box-3" data-new="30">
-                <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
+                <img src="./assets/images/30.png" class="new-box__img">
             </div>
             <div class="new-box__box-info box-4" data-new="28">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 28</span>
+                <span class="new-box__date">12 ago 2028</span>
             </div>
             <div class="new-box__box-info box-5" data-new="29">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 29</span>
+                <span class="new-box__date">12 ago 2029</span>
             </div>
             <div class="new-box__box-info box-6" data-new="30">
-                <span class="new-box__info">Lorem ipsum dolor sit amet</span>
-                <span class="new-box__date">12 ago 2022</span>
+                <span class="new-box__info">Pie de foto 30</span>
+                <span class="new-box__date">12 ago 2030</span>
             </div>
-            <div class="new-box__title box-7" data-new="28">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-8" data-new="29">Curabitur vulputate vitae tupris eteg</div>
-            <div class="new-box__title box-9" data-new="30">Curabitur vulputate vitae tupris eteg</div>
+            <div class="new-box__title box-7" data-new="28">Título noticia 28</div>
+            <div class="new-box__title box-8" data-new="29">Título noticia 29</div>
+            <div class="new-box__title box-9" data-new="30">Título noticia 30</div>
 
-            <div class="new-box__text box-10" data-new="28">   <div class="box__text-border">Praesent vel enim nisl…</div></div>
+            <div class="new-box__text box-10" data-new="28">   <div class="box__text-border">Noticia 28</div></div>
             <div class="new-box__text box-11" data-new="29">
                 <div class="box__text-border">
-                Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Noticia 29. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…Duis vel augue eros. Praesent mauris diam, rutrum eget
+                Integer eget maximus ex. NoticiaDuis vel augue eros. Praesent mauris diam, rutrum eget
                 lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
-            <div class="new-box__text box-12" data-new="30"><div class="box__text-border">Duis vel augue eros. Praesent mauris diam, rutrum eget lorem sit amet,
+                Integer eget maximus ex. Noticia</div></div>
+            <div class="new-box__text box-12" data-new="30"><div class="box__text-border">Noticia 30. Praesent mauris diam, rutrum eget lorem sit amet,
                 suscipit laoreet lacus. Pellentesque sed purus tortor. Donec vel metus ut ligula lobortis placerat.
-                Integer eget maximus ex. Praesent vel enim nisl…</div></div>
+                Integer eget maximus ex. Noticia</div></div>
 
             <div class="new-box__tags box-13" data-new="28">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -704,8 +724,8 @@
             </div>
 
             <div class="new-box__tags box-14" data-new="29">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -713,8 +733,8 @@
             </div>
 
             <div class="new-box__tags box-15" data-new="30">
-                <div class="new-box__tag">Etiqueta 1</div>
-                <div class="new-box__tag">Etiqueta Etiqueta 2</div>
+               
+               
                 <div class="new-box__tag">Et3</div>
                 <div class="new-box__tag">Etiqueta</div>
                 <div class="new-box__tag">Etiqueta</div>
@@ -722,103 +742,433 @@
             </div>
 
         </div>
+        <div class="news__grid-DK"  >
+
+            <div class="box-1" data-new="31">
+                <img src="./assets/images/31.png" class="new-box__img">
+            </div>
+            <div class="box-2" data-new="32">
+                
+            </div>
+            <div class="box-3" data-new="33">
+               
+            </div>
+            <div class="new-box__box-info box-4" data-new="31">
+                <span class="new-box__info">Pie de foto 28</span>
+                <span class="new-box__date">12 ago 2028</span>
+            </div>
+            <div class="new-box__box-info box-5" data-new="32">
+            
+            </div>
+            <div class="new-box__box-info box-6" data-new="33">
+               
+            </div>
+            <div class="new-box__title box-7" data-new="31">Título noticia 31</div>
+            <div class="new-box__title box-8" data-new="32"></div>
+            <div class="new-box__title box-9" data-new="33"></div>
+
+            <div class="new-box__text box-10" data-new="31">   <div class="box__text-border">Noticia 31</div></div>
+            <div class="new-box__text box-11" data-new="32">
+              </div>
+            <div class="new-box__text box-12" data-new="33">
+
+            </div>
+
+            <div class="new-box__tags box-13" data-new="31">
+               
+               
+                <div class="new-box__tag">Et3</div>
+                <div class="new-box__tag">Etiqueta</div>
+                <div class="new-box__tag">Etiqueta</div>
+                <div class="new-box__tag">Et32222323 232</div>
+            </div>
+
+            <div class="new-box__tags box-14" data-new="32">
+               
+            </div>
+
+            <div class="new-box__tags box-15" data-new="33">
+                
+            </div>
+
+        </div>
    
     </div>
+
+    <div id="original-grids-MB">
+    <div class="news__grid-MB">
+        <div class="news__grid-MB__new" data-new="1">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/1.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2001</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 1</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="2">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/2.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2002</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 2</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="3">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/3.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2003</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 3</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="4">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/4.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2004</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 4</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="5">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/5.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2005</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 5</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="6">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/6.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2006</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 6</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="7">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/7.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2007</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 7</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="8">
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/8.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2008</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 8</div>
+            </div>
+        </div>
+        <div class="news__grid-MB__new" data-new="9" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/9.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2009</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 9</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="10" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/10.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 20102</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 10</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="11" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/11.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2011</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 11</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="12" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/12.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2012</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 12</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="13" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/13.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2013</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 13</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="14" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/14.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2014</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 14</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="15" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/15.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2015</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 15</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="16" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/16.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2016</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 16</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="17" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/17.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2017</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 17</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="18" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/18.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2018</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 18</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="19" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/19.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2019</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 19</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="20" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/20.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2020</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 20</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="21" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/21.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2021</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 21</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="22" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/22.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2022</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 22</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="23" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/23.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2023</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 23</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="24" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/24.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2024</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 24</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="25" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/25.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2025</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 25</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="26" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/26.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2026</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 26</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="27" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/27.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2027</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 27</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="28" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/28.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2028</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 28</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="29" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/29.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2029</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 29</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="30" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/30.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2030</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 30</div>
+            </div>
+        </div>
+
+        <div class="news__grid-MB__new" data-new="31" >
+            <div class="news__grid-MB__img">
+                <img src="./assets/images/31.png" class="new-box__img">
+            </div>
+            <div class="news__grid-MB__info">
+                <div class="news__grid-MB__date">
+                    <span>12 ago 2031</span>
+                </div>
+                <div class="news__grid-MB__title">Título noticia 31</div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
     <div id="filtered-grids"></div>
 
 
 
-        <div class="news__grid-MB">
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-            <div class="news__grid-MB__new">
-                <div class="news__grid-MB__img">
-                    <img src="./assets/images/Imagen-13@2x.png" class="new-box__img">
-                </div>
-                <div class="news__grid-MB__info">
-                    <div class="news__grid-MB__date">
-                        <span>12 ago 2022</span>
-                    </div>
-                    <div class="news__grid-MB__title">Curabitur vulputate vitae tupris eteg</div>
-                </div>
-            </div>
-
-        </div>
+       
 
         <div class="button button--primary button--news" onclick="showNexts()">
             <a >Mostrar más noticias 

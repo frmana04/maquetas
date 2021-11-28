@@ -92,8 +92,127 @@
 }
 
 
+.news__flitro-botones{
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.filtro__boton{
+    padding: 15px 20px 15px 20px;
+    color:#fff;
+    font-size: 0.75rem;
+    background-color:#E60010;
+    font-family: DecimaMonoPro;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: fit-content;
+    text-transform: uppercase;
+    margin-left: 17px;
+    max-height:17px ;
+
+}
+.filtro__boton:hover{
+    cursor: pointer;
+}
 
 
+.multiselect {
+    width: fit-content;
+    font-family: ToyotaType-Regular;
+  }
+  
+  .selectBox {
+    position: relative;
+  }
+  
+  .selectBox select {
+    width: 100%;
+    padding: 7px 10px 13px 10px;
+  
+}
+  
+  .overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .overSelect:hover{
+      cursor: pointer;
+  }
+  #select{
+      font-family: ToyotaType-Regular;
+      font-size: 1rem;
+      border: 1px #707070 solid;
+  }
+   #checkboxes {
+    display: none;
+    border: 1px #707070 solid;
+    padding: 10px;
+    border-top: none;
+  }
+  
+  #checkboxes label {
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  #checkboxes label:hover {
+    
+    cursor: pointer;
+  }  
+
+  label,  input[type="checkbox"] {
+    line-height: 2.1ex;
+    }
+    
+    
+    input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+    }
+    
+    
+    input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    }
+    
+    
+    input[type="checkbox"] + label::before {
+        content: "";
+        display: inline-block;
+        vertical-align: -25%;
+        height: 16px;
+        width: 16px;
+        background-color: white;
+        border: 1px solid #707070;
+        margin-right: 0.5em;
+    }
+    
+    
+    
+    
+    input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 3px;
+    background: rgba(0, 0, 0, 0);
+    top: 5.9px;
+    left: 3px;
+    border: 3px solid #E60010;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    }
 @media(max-width:768px) {
 
 
@@ -234,6 +353,21 @@
     .button--news {
        
         margin-top: 10px;
+    }
+    .news__flitro-botones{
+       flex-direction: column;
+        margin-bottom: 29px;
+        width: 100%;
+    }
+    .filtro__boton{
+        margin-left: 0;
+        width: 100%;
+        margin-top: 18px;
+        padding: 15px 0 15px 0;
+    }
+    .multiselect {
+        width: 100%;
+     
     }
 }
 
