@@ -1,0 +1,326 @@
+
+.last-news{
+   padding-top: 100px;
+   padding-bottom: 80px;
+}
+.last-news__grid-DK{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+   
+    grid-column-gap: max(1.56vw,30px);
+}
+
+.new-box__img{
+    width: 100%;
+    height: auto;
+}
+.new-box__box-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top:18px;
+    font-family: ToyotaType-Regular;
+}
+.new-box__info{
+    color:#666666;
+    font-size: 0.875rem;
+
+}
+.new-box__date{
+    font-size: 0.875rem;
+
+}
+.new-box__title{
+    font-family: DecimaMonoPro-Bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top:16px;
+}
+.new-box__text{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: ToyotaType-Regular;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 30px;
+    line-height: 1.4rem;
+}
+.new-box__tags{
+   display: flex;
+   padding-top: 10px;
+   flex-wrap: wrap;
+}
+.new-box__tag{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2 ;
+    border: solid 1px #F2F2F2;
+    border-radius: 52px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    padding: 8px;
+    font-family: ToyotaType-Regular;
+}
+.last-news__grid-MB{
+    display:none
+}
+
+.titulo-noticia{
+    text-transform: inherit;
+}
+
+.noticia{
+    padding-top: 80px;
+}
+
+.titulo-secundario{
+    margin-bottom: 20px;
+}
+.noticia__tags{
+  
+        display: flex;
+       width: 30%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+     
+}
+.noticia__tag{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F2F2F2 ;
+    border: solid 1px #F2F2F2;
+    border-radius: 52px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    padding: 8px;
+    font-family: ToyotaType-Regular;
+}
+.noticia__rrss-tags{
+    display: flex;
+    justify-content: space-between;
+}
+.noticia__facebook{
+width: 20px;
+height: auto;
+margin-right: 15px;
+}
+.noticia__twitter{
+    width: 20px;
+    height: auto;
+}
+.noticia__fecha{
+    font-size: 0.875rem;
+    font-family: ToyotaType-Regular;
+    margin-right: 15px;
+   
+    padding-top: 4px;
+}
+.noticia__rrss{
+    display: flex;
+  
+}
+.noticia__separador{
+    border-bottom:solid 1px #CCCCCC;
+    height: 1px;
+    margin-bottom: 50px;
+}
+.noticia__texto{
+    margin-bottom: 60px;
+}
+.noticia__texto p{
+    font-size: 1rem;
+    font-family: ToyotaType-Regular;
+    margin-bottom: 20px;
+    line-height: 1.3rem;
+}
+.noticia__img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.noticia__texto-superior{
+    margin-bottom: 28px;
+    font-family: ToyotaType-Regular;
+    line-height: 1.3rem;
+
+}
+.galeria{
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.galeria__grid{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "item1 item1 item2 item2 item3 item3"
+      "item1 item1 item2 item2 item3 item3"
+      "item4 item5 item6 item6 item7 item8"
+}
+.item-1 {
+    grid-area: item1;
+  }
+  .item-2 {
+    grid-area: item2;
+  }
+  .item-3 {
+    grid-area: item3;
+  }
+  .item-4 {
+    grid-area: item4;
+  }
+  .item-5 {
+    grid-area: item5;
+  }
+  .item-6 {
+    grid-area: item6;
+  }
+  .item-7 {
+    grid-area: item7;
+  }
+  .item-8 {
+    grid-area: item8;
+  }
+  .grid__img{
+      width: 100%;
+      height: auto;
+  }
+  .grid__img:hover{
+    cursor:pointer;
+}
+@media(max-width:768px) {
+
+
+    .last-news__grid-DK{
+        grid-template-columns: 100%;
+      }
+      .box-1{
+        grid-column: 1; 
+        grid-row:1;    
+    }
+    .box-4{
+        grid-column: 1; 
+        grid-row:2;
+    }
+    .box-7{
+        grid-column: 1; 
+        grid-row:3;
+    }
+    .box-10{
+        grid-column: 1; 
+        grid-row:4;
+    }
+    .box-13{
+        grid-column: 1; 
+        grid-row:5;
+    }
+    .box-2{
+        grid-column: 1; 
+        grid-row:6;
+    }
+    .box-5{
+        grid-column: 1; 
+        grid-row:7;
+    }
+    .box-8{
+        grid-column: 1; 
+        grid-row:8;
+    }
+    .box-11{
+        grid-column: 1; 
+        grid-row:9;
+    }
+    .box-14{
+        grid-column: 1; 
+        grid-row:10;
+    }
+    .box-3{
+        grid-column: 1; 
+        grid-row:11;
+    }
+    .box-6{
+        grid-column: 1; 
+        grid-row:12;
+    }
+    .box-9{
+        grid-column: 1; 
+        grid-row:13;
+    }
+    .box-12{
+        grid-column: 1; 
+        grid-row:14;
+    }
+    .box-15{
+        grid-column: 1; 
+        grid-row:15;
+    }
+    .new-box__tags{
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media(max-width:500px) {
+
+
+    .last-news{
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .last-news__grid-DK{
+        margin-top: 30px;
+    }
+    .last-news__grid-MB{
+        display:flex;
+        flex-direction: column;
+        }
+        .last-news__grid-DK{
+            display:none;
+            }
+
+    .last-news__grid-MB{
+        margin-top: 30px;
+    }
+    .last-news__grid-MB__new{
+        display: flex;
+        margin-bottom: 20px;
+       
+    }
+    .last-news__grid-MB__img{
+        width: 34%;
+    }
+    .last-news__grid-MB__info{
+        width: 66%;
+        display: flex;
+        padding-left: 10px;
+        padding-top: 4px;
+        flex-direction: column;
+    }
+    .last-news__grid-MB__date{
+        font-size: 0.75rem;
+        color:#666666;
+        margin-bottom: 10px;
+        font-family: ToyotaType-Regular;
+    }
+    .last-news__grid-MB__title{
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-family: DecimaMonoPro-Bold;
+    }
+}
+

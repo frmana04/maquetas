@@ -240,6 +240,12 @@ h4{
 	margin-bottom: 30px;
 	font-family: DecimaMonoPro;
 }
+h5{
+	font-size: 1.375rem;
+	font-family: DecimaMonoPro;
+	color:#666666;
+
+}
 .header__container {
     width: 100%;
     position: relative;
@@ -367,6 +373,7 @@ width: 100%;
 		font-size: 1.125rem;
 		margin-bottom: 20px;
 	}
+
 	.img--DK {
         display: none;
     }
