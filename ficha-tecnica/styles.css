@@ -28,7 +28,7 @@
   }
 .modal__close-img {
     position: absolute;
-    width: 20px;
+    width: 15px;
     height: auto;
     top: 3px;
     right: 4px;
@@ -189,10 +189,11 @@ display: block;
     margin-left: auto;
     width: 100%;
     display: grid;
-    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    grid-template-columns:  16.49% 16.49% 16.49% 16.49% 16.49% 16.49%;
     grid-template-rows: auto;
+    column-gap: 4px;
+    row-gap: 3px;
     grid-template-areas: 
-      "item1 item1 item2 item2 item3 item3"
       "item1 item1 item2 item2 item3 item3"
       "item4 item5 item6 item6 item7 item8"
 }

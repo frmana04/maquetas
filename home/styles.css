@@ -16,7 +16,15 @@
     width: max(32vw, 340px);
 }
 
+.box__text-border{
 
+    border-bottom: 1px solid #666666;
+
+    height: 100%;
+
+    margin-bottom: 30px;
+
+}
 
 .prox-carrera {
 
@@ -245,8 +253,7 @@
     margin-top: 20px;
     font-size: 1rem;
     font-family: ToyotaType-Regular;
-    border-bottom: 1px solid #666666;
-    padding-bottom: 30px;
+  
     line-height: 1.4rem;
 }
 .new-box__tags{
