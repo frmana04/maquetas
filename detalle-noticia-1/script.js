@@ -20,6 +20,9 @@ function openImage(node){
 
     
     document.querySelector(`.modal`).innerHTML=content;
+    if(document.querySelector('.modal').querySelector('.galeria__text-img'))
+        document.querySelector('.modal').querySelector('.galeria__text-img').innerHTML="";
+    
     document.querySelector(`.modal`).style.display="flex";
     addEventOpenVideo(video);
    
@@ -45,6 +48,67 @@ function closeImage(){
     document.querySelector(`.modal`).style.display="none";
 }
 
+function setGalleryDisposition(){
 
+    if(document.documentElement.clientWidth > 500 ){
+    
+    
+    let numImages = document.querySelectorAll('.item-any').length;
+    if (numImages!=9){
+        document.querySelector('.galeria__grid').style.display="flex";
+        document.querySelector('.galeria__grid').style.flexWrap="wrap";
+        document.querySelector('.galeria__grid').style.columnGap="0";
+        document.querySelector('.galeria__grid').style.justifyContent="space-evenly";
+        document.querySelectorAll('.item-any').forEach(node=>{
+            node.style.width="24.7%";
+        })
+    }
+    }
+    else {
+        let numNodes=document.querySelectorAll('.item-any').length;
+        document.querySelectorAll('.item-any').forEach((node,index)=>{
+            if ((index+1)%3-1==0 || (numNodes%3>0&&numNodes-index<2 )){
+                    node.querySelector('.display--DK').classList.remove('display--DK');
+                    node.querySelector('.display--MB').style.display="none";
+            }
+        })
+    }
+}
 
-addEvents()
+function createSelectors(){
+    let numSelectors = Math.ceil(document.querySelectorAll('.item-any').length/3);
+    content="";
+    if(numSelectors>1)
+    for(let i=0;i<numSelectors;i++){
+        content+=`<span class="galeria__selector ${i==0?'selector-selected':''}" onclick="selectSelector(${i+1})" id="selector-${i+1}"></span>`
+    }
+
+    document.querySelector('.galeria__selectores').innerHTML=content;
+}
+
+function selectSelector(group){
+    document.querySelectorAll(".galeria__selector").forEach(node=>{
+        node.classList.remove('selector-selected')
+    })
+    document.querySelector(`#selector-${group}`).classList.add('selector-selected');
+    generateGridTemplate(group);
+}
+
+function generateGridTemplate(group){
+    let numNodes=document.querySelectorAll('.item-any').length;
+    let numSelectors = Math.ceil(document.querySelectorAll('.item-any').length/3);
+    id1=group*3-2;
+    id2=group*3-1;
+    id3=group*3;
+    if(numNodes%3==2 && numSelectors==group )
+        id3=id2;
+    if(numNodes%3==1 && numSelectors==group ){
+        id3=id1;
+        id2=id1;
+    }
+    document.querySelector('.galeria__grid').style.gridTemplateAreas=' "  item'+id1+' item'+id1+'   " "   item'+id2+' item'+id3+'  " ';
+}
+
+addEvents();
+setGalleryDisposition();
+createSelectors();

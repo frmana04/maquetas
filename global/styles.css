@@ -343,6 +343,10 @@ width: 100%;
 
 .display--DK-inline{display: inline;}
 
+.display--MB-flex{display: none;}
+
+.display--DK-flex{display: flex;}
+
 @media(max-width:1320px){
 	.center-content--margin{
 		width: 90%;
@@ -373,7 +377,11 @@ width: 100%;
 		font-size: 1.125rem;
 		margin-bottom: 20px;
 	}
-
+	h5{
+		font-size: 0.75rem;
+	
+	
+	}
 	.img--DK {
         display: none;
     }
@@ -391,6 +399,10 @@ width: 100%;
 	.display--DK-inline{display: none;}
 
 .display--MB-inline{display: inline;}
+
+.display--MB-flex{display: flex;}
+
+.display--DK-flex{display: none;}
 
 }
 
