@@ -67,6 +67,8 @@ function setGalleryDisposition(){
     else {
         let numNodes=document.querySelectorAll('.item-any').length;
         document.querySelectorAll('.item-any').forEach((node,index)=>{
+             node.style.position="relative"
+            node.style.gridArea="item"+(index+1);
             if ((index+1)%3-1==0 || (numNodes%3>0&&numNodes-index<2 )){
                     node.querySelector('.display--DK').classList.remove('display--DK');
                     node.querySelector('.display--MB').style.display="none";
