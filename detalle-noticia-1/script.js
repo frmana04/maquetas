@@ -60,14 +60,19 @@ function setGalleryDisposition(){
         document.querySelector('.galeria__grid').style.columnGap="0";
         document.querySelector('.galeria__grid').style.justifyContent="space-evenly";
         document.querySelectorAll('.item-any').forEach(node=>{
+            
+            if (document.documentElement.clientWidth > 768)
             node.style.width="24.7%";
+          
+            else
+            node.style.width="33.2%";
         })
     }
     }
     else {
         let numNodes=document.querySelectorAll('.item-any').length;
         document.querySelectorAll('.item-any').forEach((node,index)=>{
-             node.style.position="relative"
+           
             node.style.gridArea="item"+(index+1);
             if ((index+1)%3-1==0 || (numNodes%3>0&&numNodes-index<2 )){
                     node.querySelector('.display--DK').classList.remove('display--DK');
@@ -97,6 +102,7 @@ function selectSelector(group){
 }
 
 function generateGridTemplate(group){
+    if(document.documentElement.clientWidth <= 500 ){
     let numNodes=document.querySelectorAll('.item-any').length;
     let numSelectors = Math.ceil(document.querySelectorAll('.item-any').length/3);
     id1=group*3-2;
@@ -109,8 +115,9 @@ function generateGridTemplate(group){
         id2=id1;
     }
     document.querySelector('.galeria__grid').style.gridTemplateAreas=' "  item'+id1+' item'+id1+'   " "   item'+id2+' item'+id3+'  " ';
-}
+}}
 
 addEvents();
 setGalleryDisposition();
 createSelectors();
+generateGridTemplate(1);

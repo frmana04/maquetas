@@ -292,6 +292,7 @@ opacity: 1;
 .item-any {
     height: auto; 
     overflow: hidden; 
+    position: relative;
   }
   
   .grid__img {
@@ -443,7 +444,9 @@ opacity: 1;
         width: 70vw;
         height: 53.5vw;
     } 
-
+    .galeria__text-img{
+        display: none;
+    }
 }
 
 @media(max-width:500px) {
@@ -566,9 +569,7 @@ opacity: 1;
     width: 90vw;
     height: 68.75vw;
 } 
-.galeria__text-img{
-    display: none;
-}
+
 .item-any{
     width: 100%;
 }
