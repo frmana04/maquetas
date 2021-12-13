@@ -39,7 +39,6 @@ function addEventOpenVideo(video){
             `
         })
 
-  
 }
 
 function closeImage(){

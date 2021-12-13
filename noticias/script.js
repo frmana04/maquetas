@@ -199,6 +199,7 @@ function applyFilter() {
     document.querySelector('#checkboxes').querySelectorAll('input').forEach(node => {
         if (node.checked)
             tags.push(node.nextElementSibling.innerHTML);
+            
         allTags.push(node.nextElementSibling.innerHTML);
     })
 
