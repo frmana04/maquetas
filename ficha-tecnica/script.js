@@ -71,5 +71,8 @@ function closeImage(){
 mostrarDatos("ficha-tecnica__especificaciones");
 mostrarDatos("ficha-tecnica__componentes");
 
-setHeights();
+window.onload=()=>{
+    setHeights();
+}
+
 addEvents()

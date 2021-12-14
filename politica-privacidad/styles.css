@@ -1,0 +1,63 @@
+.header{
+    margin-top: 80px;
+}
+
+.header__titulo{
+    font-size: 1.5rem;
+    font-family: DecimaMonoPro;
+    margin-bottom: 60px;
+}
+.header__ultima-edicion{
+    font-size:0.75rem;
+    font-family: ToyotaType-Regular;
+    margin-bottom: 50px;
+}
+.header__separador{
+    width: 100%;
+
+    border-bottom: solid 1px #CCCCCC;
+}
+.privacidad{
+    margin-top: 80px;
+}
+.privacidad__politica-titulo{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: ToyotaType-Regular;
+    margin-bottom: 15px;
+}
+.privacidad__politica-texto{
+    font-size: 1rem;
+    font-family: ToyotaType-Regular;
+    line-height: 1.4rem;
+}
+.privacidad__politica{
+    margin-bottom: 45px;
+}
+@media(max-width:500px){
+    .header__titulo{
+    font-size: 1.125rem;
+    }
+    .header__ultima-edicion{
+    font-family: DecimaMonoPro;
+    margin-bottom: 30px;
+}
+.privacidad{
+    margin-top: 30px;
+}
+.privacidad__politica-titulo{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-family: DecimaMonoPro;
+    line-height: 1.3rem;
+
+}
+.privacidad__politica-texto{
+   
+    font-family: DecimaMonoPro;
+    line-height: 1.3rem;
+}
+.privacidad__politica{
+    margin-bottom: 33px;
+}
+}
