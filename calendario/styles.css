@@ -40,10 +40,9 @@
     grid-area: cta2;
     justify-self: end;
     font-family: DecimaMonoPro-Italic;
-
-    
+    height: fit-content;
   }
-  
+ 
   .item-clasificacion {
     display: grid;
     border-bottom: 2px solid #B2B2B2;

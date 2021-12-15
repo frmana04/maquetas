@@ -151,7 +151,9 @@ function createRowNewsFilteredMB(id) {
 function generateOptionsFilter() {
     let tags = [],
         content = "";
-    document.querySelector('#original-grids-DK').querySelectorAll('.new-box__tag').forEach(node => {
+    let allNodes = document.querySelector('#original-grids-DK').querySelectorAll('.new-box__tag');
+    if (allNodes.length>0){
+    allNodes.forEach(node => {
         tags.push(node.innerHTML);
 
     });
@@ -164,6 +166,10 @@ function generateOptionsFilter() {
         `
     });
     document.querySelector('#checkboxes').innerHTML = content;
+}
+else {
+    document.querySelector('.news__flitro-botones').style.display="none";
+}
 
 }
 

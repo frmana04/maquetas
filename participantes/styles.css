@@ -48,12 +48,15 @@ height: auto;
   justify-content: flex-end;
   min-width: 260px;
   font-family:ToyotaType-Regular;
-
-}
-.equipo__mostrar-texto{
   font-size: 1rem;
   text-decoration: underline;
- 
+}
+.equipo__mostrar-texto{
+
+}
+.equipo__ocultar-texto{
+
+ display: none;
   
 }
 .equipo__mostrar:hover{
