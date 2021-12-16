@@ -131,6 +131,9 @@ cursor: pointer;
   .equipo__mostrar-texto{
     display: none;
   }
+  .equipo__ocultar-texto{
+    display: none;
+  }
   .equipo__mostrar{
     width: fit-content;
     min-width: unset;
@@ -149,6 +152,7 @@ cursor: pointer;
 
   .equipos {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 }
@@ -197,7 +201,7 @@ cursor: pointer;
   margin-bottom: 20px;
 }
 .equipo__pilotos-img{
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .piloto__info{
   margin-bottom: 20px;

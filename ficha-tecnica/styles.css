@@ -68,7 +68,13 @@ cursor: pointer;
     text-align: right;
 
   }
+  .ficha__ocultar-texto{
+    font-size: 1rem;
+    text-decoration: underline;
+    min-width: 154px;
+    text-align: right;
 
+  }
   .ficha__mostrar-arrow{
     width: 10px;
     height: auto;
