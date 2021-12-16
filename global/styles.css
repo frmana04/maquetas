@@ -294,6 +294,7 @@ color: black;
 
 .button:hover{
 	cursor: pointer;
+	text-decoration: underline;
 }
 .button__img{
 	width: 9px;

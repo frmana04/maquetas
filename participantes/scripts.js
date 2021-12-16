@@ -6,16 +6,25 @@ function toggleMostrar(id){
     if (node.dataset.state=="open"){
 
         node.querySelector('.equipo__pilotos').style.display="none";
-        node.querySelector('.equipo__mostrar-texto').innerHTML="Mostrar detalles del equipo";
+
+        if (document.documentElement.clientWidth > 768){
+        node.querySelector('.equipo__mostrar-texto').style.display="block";
+        node.querySelector('.equipo__ocultar-texto').style.display="none";
+        }
         node.querySelector('.equipo__mostrar-arrow').style.transform = "rotate(90deg)";
         node.dataset.state="close";
     }
     else{
         node.querySelector('.equipo__pilotos').style.display="grid";
-        node.querySelector('.equipo__mostrar-texto').innerHTML="Ocultar detalles del equipo";
+        
+        if (document.documentElement.clientWidth > 768){
+        node.querySelector('.equipo__mostrar-texto').style.display="none";
+        node.querySelector('.equipo__ocultar-texto').style.display="block";
+        }
         node.querySelector('.equipo__mostrar-arrow').style.transform = "rotate(270deg)";
         node.dataset.state="open";
     }
    
 
 }
+toggleMostrar('equipo-1');

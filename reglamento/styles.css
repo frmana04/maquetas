@@ -3,7 +3,7 @@
     margin-bottom: 100px;
 }
 .regla{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .regla__style-h3{
     color:#E60010;
@@ -22,12 +22,14 @@
 .regla__images-block{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .regla__image-block{
     display: flex;
     flex-direction: column;
     width: 31.5%;
+    margin-bottom: 30px;
    
 }
 

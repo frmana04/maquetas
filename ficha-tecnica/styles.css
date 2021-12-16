@@ -68,7 +68,13 @@ cursor: pointer;
     text-align: right;
 
   }
+  .ficha__ocultar-texto{
+    font-size: 1rem;
+    text-decoration: underline;
+    min-width: 154px;
+    text-align: right;
 
+  }
   .ficha__mostrar-arrow{
     width: 10px;
     height: auto;
@@ -111,14 +117,13 @@ cursor: pointer;
   }
   .ficha-tecnica__caracter-key{
       font-family:ToyotaType-Semibold ;
-      max-width: 40%;
-      width: 40%;
+      width: 50%;
   }
 
   .ficha-tecnica__caracter-value{
     font-family:ToyotaType-Regular ;
-    max-width: 60%;
-    width: 60%;
+    width: 50%;
+    text-align: right;
    
 }
 
@@ -193,6 +198,7 @@ display: block;
     grid-template-rows: auto;
     column-gap: 4px;
     row-gap: 3px;
+    
     grid-template-areas: 
       "item1 item1 item2 item2 item3 item3"
       "item4 item5 item6 item6 item7 item8"
@@ -227,6 +233,12 @@ display: block;
   }
   .grid__img:hover{
     cursor:pointer;
+}
+.width-100{
+    width: 100%;
+}
+.width-0{
+    width: 0;
 }
 @media(max-width:1250px){
     .center-content-no-margin{

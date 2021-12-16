@@ -11,7 +11,8 @@ function mostrarDatos(id) {
         let node = document.querySelector(`#${id}`);
 
         node.querySelector('.listas-parejas').style.display = "block";
-        node.querySelector('.ficha__mostrar-texto').innerHTML = "Ocultar detalles";
+        node.querySelector('.ficha__mostrar-texto').style.display = "none";
+        node.querySelector('.ficha__ocultar-texto').style.display = "initial";
         node.querySelector('.ficha__mostrar-arrow').style.transform = "rotate(270deg)";
         node.dataset.state = "open";
 
@@ -28,7 +29,8 @@ function ocultarDatos(id) {
         let node = document.querySelector(`#${id}`);
 
         node.querySelector('.listas-parejas').style.display = "none";
-        node.querySelector('.ficha__mostrar-texto').innerHTML = "Mostrar detalles";
+        node.querySelector('.ficha__mostrar-texto').style.display = "initial";
+        node.querySelector('.ficha__ocultar-texto').style.display = "none";
         node.querySelector('.ficha__mostrar-arrow').style.transform = "rotate(90deg)";
         node.dataset.state = "close";
 
@@ -74,5 +76,7 @@ mostrarDatos("ficha-tecnica__componentes");
 window.onload=()=>{
     setHeights();
 }
+
+
 
 addEvents()
