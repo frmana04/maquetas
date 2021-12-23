@@ -1,0 +1,168 @@
+.main {
+    height: 1500px;
+}
+
+
+
+.footer__first-row {
+ 
+    padding-left: 20%;
+    padding-top: 45px;
+    border-top: solid #F2F2F2 6px;
+    padding-bottom: 100px;
+}
+
+.footer__rrss {
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer__rrss-text1 {
+    font-size: 2.125rem;
+
+    margin-bottom: 35px;
+    display: flex;
+    font-family: DecimaMonoPro;
+}
+
+.footer__slash-container{
+    width: fit-content;
+    transform: rotate(-6deg);
+}
+.footer__slash {
+    color: #E60010;
+    font-size: 1.8rem;
+    display: flex;
+}
+
+
+.footer__rrss-text2 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: DecimaMonoPro;
+}
+
+.footer__rrss-iconos {
+    display: flex;
+}
+
+.footer__ico-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer__ico-container:hover{
+    cursor: pointer;
+}
+.footer__ico-image {
+    width: 35px;
+    height: auto;
+}
+.footer__ico-text{
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-top:13px ;
+    font-family:DecimaMonoPro-Italic;
+}
+.footer__second-row{
+    padding-top: 50px;
+    padding-bottom: 74px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000;
+    font-size: 0.875rem;
+    font-family: ToyotaType-Regular;
+}
+.footer__links{
+    display: flex;
+    
+}
+.footer__link{
+    color:#808080;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.footer__copyright{
+    color:#808080;
+    display: flex;
+    flex-direction: column;
+  
+   
+}
+.footer__copyright-first{
+    text-transform: uppercase;
+}
+
+.footer__copyright-second{
+    margin-top:10px;
+    text-align: right;
+}
+@media(max-width:1320px){
+    .footer__second-row{
+    flex-direction: column;
+    padding-left: 20%;
+    padding-top: 50px;
+}
+.footer__links{
+    margin-bottom: 50px;
+
+}
+.footer__copyright-second{
+    margin-top:10px;
+    text-align: left;
+}
+}
+@media(max-width:650px){
+    .footer__first-row {
+ 
+ padding-left: 0;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ padding-top: 45px;
+ border-top: solid #F2F2F2 3px;
+ padding-bottom: 100px;
+}
+
+.footer__rrss{
+ width: 100%;
+}
+
+.footer__rrss-iconos{
+ display: flex;
+ justify-content: space-evenly;
+}
+.footer__ico-container{
+margin-right: 0;
+}
+.footer__rrss-text1,.footer__rrss-text2{
+ padding-left: 8%;
+}
+
+.footer__separator{
+    display: none;
+}
+.footer__links{
+    flex-direction: column;
+    margin-bottom: 0;
+
+}
+.footer__second-row{
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 20px;
+    font-family: DecimaMonoPro;
+}
+
+.footer__link{
+    margin-top: 50px;
+}
+.footer__copyright{
+    margin-top: 108px;
+}
+
+}
