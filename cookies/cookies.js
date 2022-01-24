@@ -32,13 +32,21 @@ function openConfig(){
     document.querySelector('.modal-cookies #boton-cookies-seleccionadas').style.display="block";
     document.querySelector('.modal-cookies #boton-todas-cookies').style.display="none";
    document.querySelector('.modal-cookies .list-checkboxes').style.display="block";
+   document.querySelector('.modal-cookies .list-checkboxes input[name="10"]').checked=cookieConfig.cookies.necesarias;
+   document.querySelector('.modal-cookies .list-checkboxes input[name="20"]').checked=cookieConfig.cookies.rendimiento
+   document.querySelector('.modal-cookies .list-checkboxes input[name="30"]').checked=cookieConfig.cookies.funcionales
+   document.querySelector('.modal-cookies .list-checkboxes input[name="40"]').checked=cookieConfig.cookies.targeting
+
+    
+
 }
 
 function setSelectedCookies(){
-
+    deleteCookie()
     document.querySelectorAll('.modal-cookies .list-checkboxes input[type=checkbox]').forEach(node=>{
-        if (node.checked)
-            setCookie(node.name);
+      
+            setCookie(node.name,node.checked);
+        
     });
 }
 
@@ -67,6 +75,7 @@ function startCookie(){
 }
 
 function setAllCookies(){
+    deleteCookie()
     document.cookie = `${cookieConfig.name}=10203040;max-age=${cookieConfig.age}`;
     cookieConfig.cookies.necesarias=true;
     cookieConfig.cookies.rendimiento=true;
@@ -75,17 +84,21 @@ function setAllCookies(){
     addTagManager();
 }
 
-function setCookie(value){
-    document.cookie=`${cookieConfig.name}=${createStringCookie(value)};max-age=${cookieConfig.age}`;
-    switch(value){
-        case '10':cookieConfig.cookies.necesarias=true ;break;
-        case '20':cookieConfig.cookies.rendimiento=true  ;addTagManager();break;
-        case '30':cookieConfig.cookies.funcionales=true ;break;
-        case '40':cookieConfig.cookies.targeting=true ;break;
+function setCookie(name,value){
+    if(value)
+    document.cookie=`${cookieConfig.name}=${createStringCookie(name)};max-age=${cookieConfig.age}`;
+    switch(name){
+        case '10':cookieConfig.cookies.necesarias=value ;break;
+        case '20':cookieConfig.cookies.rendimiento=value ; break;
+        case '30':cookieConfig.cookies.funcionales=value ;break;
+        case '40':cookieConfig.cookies.targeting=value ;break;
     }
+    if (cookieConfig.cookies.rendimiento)
+            addTagManager();
 }
 
 function setCookieConfig(){
+    resetCookieConfig();
     let arrayValues=(getCookie(cookieConfig.name)||"").match(/.{1,2}/g)||[];
     arrayValues=arrayValues.sort((a, b) => a - b)
     arrayValues.forEach(value=>{
@@ -97,12 +110,17 @@ function setCookieConfig(){
         }
     })
 }
-
+function resetCookieConfig(){
+    cookieConfig.cookies.necesarias=true 
+   cookieConfig.cookies.rendimiento=false  
+    cookieConfig.cookies.funcionales=false 
+    cookieConfig.cookies.targeting=false 
+}
 function createStringCookie(value){
     
     let arrayValues=(getCookie(cookieConfig.name)||"").match(/.{1,2}/g)||[];
     arrayValues.push(value);
-    arrayValues=arrayValues.sort((a, b) => a - b)
+    arrayValues=[...new Set(arrayValues.sort((a, b) => a - b))]
     return arrayValues.join("");
 }
 
@@ -122,7 +140,7 @@ function addTagManager(){
 }
 
 function deleteCookie() {
-    document.cookie = cookieConfig.name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = cookieConfig.name + '=; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
 
