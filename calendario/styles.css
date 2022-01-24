@@ -42,7 +42,12 @@
     font-family: DecimaMonoPro-Italic;
     height: fit-content;
   }
- 
+
+  .item-cta2-desactivado {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
   .item-clasificacion {
     display: grid;
     border-bottom: 2px solid #B2B2B2;
