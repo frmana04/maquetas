@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../global/styles.css">
+    <link rel="stylesheet" href="../cookies/styles.css">
 
+   
 
     <title>Document</title>
 </head>
@@ -297,8 +299,33 @@
             </div>
         </div>
     </section>
+    <div style="display: none;" class='modal-cookies-base'>
+    
+        <p class="modal-cookies-contenido-titulo">Tu configuración de Cookies</p>
+       
+       <span class="modal-cookies-contenido-texto"> En Toyota utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia en nuestra web, mejorar su funcionamiento mediante análisis y con fines publicitarios. 
+        Te recomendamos que mantengas todas las cookies, o si no estás de acuerdo puedes modificarlas pinchando la opción configuración de cookies. 
+        Más información en nuestra Política de cookies.
+    </span>
+    <div class="list-checkboxes" style="display: none;">
+        <ul>
+            <li><input name="10" type="checkbox" checked disabled> Cookies necesarias</li>
+            <li><input name="20" type="checkbox"> Cookies de rendimiento</li>
+            <li><input name="30" type="checkbox"> Cookies funcionales</li>
+            <li><input name="40" type="checkbox"> Cookies de targeting</li>
+          </ul>
+    </div>
+        <div  class="modal-cookies-contenido-botones">
+            <button id="boton-todas-cookies" onclick="setAllCookies();closeModalCookies()" class="modal-cookies-contenido-boton">Aceptar todas las cookies</button>
+            <button style="display:none;" id="boton-cookies-seleccionadas" onclick="setSelectedCookies();closeModalCookies()" class="modal-cookies-contenido-boton">Aceptar cookies seleccionadas</button>
+            <button onclick="openConfig()" class="modal-cookies-contenido-boton">Configuración de cookies</button>
+        </div>
+        
+        </div>
+
 </body>
-<script src="script.js"></script>
+
+
 
 </html>
 
@@ -306,3 +333,6 @@
 <style>
 
 </style>
+
+<script src="script.js"></script>
+<script src="../cookies/cookies.js"></script>

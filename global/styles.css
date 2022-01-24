@@ -4,7 +4,10 @@
 	font-family: 'DecimaMonoPro-Bold';
 	src: url(../global/assets/fonts/DecimaMonoPro-Bold.ttf);
 }
-
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url(../global/assets/fonts/OpenSans-Regular.ttf);
+}
 @font-face {
 	font-family: 'DecimaMonoProLt-Italic';
 	src: url(../global/assets/fonts/DecimaMonoProLt-Italic.ttf);

@@ -53,7 +53,7 @@ document.querySelectorAll('.componente__pareja').forEach(node =>{
 }
 
 function addEvents(){
-    document.querySelector('.galeria__grid').querySelectorAll('div').forEach(node=>{
+    document.querySelector('.galeria__grid-DK').querySelectorAll('div').forEach(node=>{
         node.addEventListener('click',($ev)=>{
             openImage($ev.target.src);
         })
@@ -70,6 +70,42 @@ function closeImage(){
     document.querySelector(`.modal`).style.display="none";
 }
 
+function startImagesGaleria() {
+    document.querySelectorAll('.image__galeria').forEach((node, index) => {
+        if (index != 0)
+            node.style.display = "none";
+    })
+}
+
+function createSelectors() {
+    let numSelectors = document.querySelectorAll('.image__galeria').length;
+    content = "";
+    if (numSelectors > 1) {
+        for (let i = 0; i < numSelectors; i++) {
+            content += `<span class="image__galeria-selector ${i==0?'image__galeria-selector-selected':''}" onclick="selectSelector(${i+1})" id="selector-${i+1}"></span>`
+        }
+        document.querySelector('.image__galeria-selectores').innerHTML = content;
+    }
+}
+
+function selectSelector(number) {
+    let nodesNoticia = document.querySelectorAll('.image__galeria');
+    document.querySelectorAll(".image__galeria-selector").forEach((node, index) => {
+        node.classList.remove('image__galeria-selector-selected')
+        if (number == index + 1)
+            nodesNoticia[index].style.display = "flex";
+        else
+            nodesNoticia[index].style.display = "none";
+    })
+    document.querySelector(`#selector-${number}`).classList.add('image__galeria-selector-selected');
+}
+
+
+if (document.documentElement.clientWidth <= 768) {
+
+startImagesGaleria();
+createSelectors();
+}
 mostrarDatos("ficha-tecnica__especificaciones");
 mostrarDatos("ficha-tecnica__componentes");
 
